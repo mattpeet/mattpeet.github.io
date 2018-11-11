@@ -24,7 +24,7 @@ class Header extends Component {
           <h3 id="header-subtitle" className="col-md-6">illustration</h3>
         </div>
         <div className="row social-and-nav">
-          <div className="social-links col-md-6">
+          <div className="social-links">
             <i className="fab fa-instagram"></i>
             <i className="fab fa-twitter"></i>
             <i className="fab fa-tumblr-square"></i>
