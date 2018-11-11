@@ -19,6 +19,10 @@ i {
   padding-right: 0px;
 }
 
+.social-links {
+  padding: 0px;
+}
+
 #hamburger-menu {
   float: right;
   padding-right: 15px;
