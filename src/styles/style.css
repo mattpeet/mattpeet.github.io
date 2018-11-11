@@ -35,3 +35,9 @@ i {
 #header-subtitle {
   -webkit-margin-before: 0;
 }
+
+@media(min-width: 768px) and (orientation: landscape) {
+  #hamburger-menu {
+    visibility: hidden;
+  }
+}
