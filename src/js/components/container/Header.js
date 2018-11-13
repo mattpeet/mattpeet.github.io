@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import ArtistDetails from "../../models/ArtistDetails"
 
 class Header extends Component {
   constructor() {
     super();
+    this.artist = new ArtistDetails()
     this.state = {
      
     };
@@ -25,11 +27,11 @@ class Header extends Component {
         </div>
         <div className="row social-and-nav">
           <div className="social-links">
-            <i className="fab fa-instagram"></i>
-            <i className="fab fa-twitter"></i>
-            <i className="fab fa-tumblr-square"></i>
-            <i className="fab fa-facebook-square"></i>
-            <i className="fas fa-envelope"></i>
+            <a href={this.artist.instagram} target="_blank"><i className="fab fa-instagram"></i></a>
+            <a href={this.artist.twitter} target="_blank"><i className="fab fa-twitter"></i></a>
+            <a href={this.artist.tumblr} target="_blank"><i className="fab fa-tumblr-square"></i></a>
+            <a href={this.artist.facebook} target="_blank"><i className="fab fa-facebook-square"></i></a>
+            <a href={'mailto:' + this.artist.email}><i className="fas fa-envelope"></i></a>
           </div>
           <i id="hamburger-menu" className="fas fa-bars col-xs-1"></i>
         </div>
