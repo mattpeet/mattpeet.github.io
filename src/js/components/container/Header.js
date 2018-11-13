@@ -7,14 +7,30 @@ class Header extends Component {
     super();
     this.artist = new ArtistDetails()
     this.state = {
-     
+      menuOpen: false
     };
-    this.handleChange = this.handleChange.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ [event.target.id]: event.target.value });
+
+// Menu Handlers
+
+  getMenuIcon() {
+    if (this.state.menuOpen) {
+      return "fa-times";
+    } else {
+      return "fa-bars";
+    }
   }
+
+  toggleMenu() {
+    this.setState((prevState) => {
+      prevState.menuOpen = !prevState.menuOpen
+      return prevState
+    })
+  }
+
+
 
   render() {
     return (
@@ -33,7 +49,7 @@ class Header extends Component {
             <a href={this.artist.facebook} target="_blank"><i className="fab fa-facebook-square"></i></a>
             <a href={'mailto:' + this.artist.email}><i className="fas fa-envelope"></i></a>
           </div>
-          <i id="hamburger-menu" className="fas fa-bars col-xs-1"></i>
+          <i id="hamburger-menu" className={'fas ' + this.getMenuIcon() + ' col-xs-1'} onClick={this.toggleMenu}></i>
         </div>
       </div>
     );
