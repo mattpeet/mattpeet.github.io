@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Header from "./Header.js"
-import MainContent from "./MainContent.js"
+import Navigation from "./Navigation.js"
+import ProjectMainGrid from "./ProjectMainGrid.js"
 
 class App extends Component {
 
@@ -9,7 +10,8 @@ class App extends Component {
     return (
       <div className="app-container">
         <Header />
-        <MainContent />
+        <Navigation />
+        <ProjectMainGrid />
       </div>
     );
   }

@@ -21,7 +21,6 @@ class SideNavigation extends Component {
           <a href="#" className="text-nav-link">about</a>
           <a href="#" className="text-nav-link">contact</a>
         </div>
-        
       </div>
 
       )

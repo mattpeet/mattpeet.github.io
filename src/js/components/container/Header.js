@@ -5,12 +5,12 @@ class Header extends Component {
 
   render() {
     return (
-      <div className="header-container col-md-12">
-        <div className="row">
-          <h1 id="illustrator-name" className="col-md-6">MATT PEET</h1>
+      <div className="header-container">
+        <div>
+          <h1 id="illustrator-name">MATT PEET</h1>
         </div>
-        <div className="row">
-          <h3 id="header-subtitle" className="col-md-6">illustration</h3>
+        <div>
+          <h3 id="header-subtitle">illustration</h3>
         </div>
       </div>
     );

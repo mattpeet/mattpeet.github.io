@@ -1,59 +1,39 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import ArtistDetails from "../../models/ArtistDetails.js"
+import SocialAndMenuNavigation from "./SocialAndMenuNavigation.js"
+import MenuOverlay from "./MenuOverlay.js"
+import SideNavigation from "./SideNavigation.js"
 
-class Navigation extends Component {
+class MainContent extends Component {
 
   constructor(props) {
     super(props);
-    this.artist = new ArtistDetails()
     this.state = {
-      menuOpen: this.props.menuOpen
+      menuOpen: false
     };
     this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  // Menu Handlers
-
-  getMenuIcon() {
-    if (this.state.menuOpen) {
-      return "fa-times";
-    } else {
-      return "fa-bars";
-    }
-  }
 
   toggleMenu() {
+    // TODO - update CSS and overlays etc according to menu state
     this.setState((prevState) => {
       prevState.menuOpen = !prevState.menuOpen
       return prevState
     })
-    // tell the parent App to show the menu overlay
-    this.props.openMenuCommand()
   }
-
 
 
 
   render() {
     return(
-      <div className="row social-and-nav">
-
-        <div className="social-links col-md-4">
-          <a href={this.artist.instagram} target="_blank"><i className="fab fa-instagram"></i></a>
-          <a href={this.artist.twitter} target="_blank"><i className="fab fa-twitter"></i></a>
-          <a href={this.artist.tumblr} target="_blank"><i className="fab fa-tumblr-square"></i></a>
-          <a href={this.artist.facebook} target="_blank"><i className="fab fa-facebook-square"></i></a>
-          <a href={'mailto:' + this.artist.email}><i className="fas fa-envelope"></i></a>
-        </div>
-        <div className="col-md-8 nav-end">
-          <i id="hamburger-menu" className={'fas ' + this.getMenuIcon() + ' col-xs-1'} onClick={this.toggleMenu}></i>
-        </div>
-
+      <div id="navigation-content">
+        <SocialAndMenuNavigation menuOpen={this.state.menuOpen} openMenuCommand={this.toggleMenu} />
+        <SideNavigation />
       </div>
       )
-  }
 
+  }
 }
 
-export default Navigation
+export default MainContent
