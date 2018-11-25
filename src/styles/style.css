@@ -56,6 +56,26 @@ a i {
   }
 }
 
+/* Side navigation (desktop) */
+
+#project-filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 4em;
+}
+
+#project-filters ul ul li {
+  padding-left: 20px;
+  padding-bottom: 5px;
+  line-height: 1em;
+}
+
+.text-nav-link {
+  float: left;
+  clear: both;
+}
+
 /* Main Grid Content */
 
 #main-project-grid-container {
