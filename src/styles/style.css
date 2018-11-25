@@ -56,3 +56,36 @@ a i {
   }
 }
 
+/* Main Grid Content */
+
+#main-project-grid-container {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+#side-nav-container {
+  visibility: hidden;
+}
+
+#project-list-container {
+  grid-column: 1;
+}
+
+@media(min-width: 768px) and (orientation: landscape) {
+  #main-project-grid-container {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+
+  #side-nav-container {
+    visibility: visible;
+    grid-column: 1;
+  }
+
+  #project-list-container {
+    grid-column: 2;
+  }
+}
+

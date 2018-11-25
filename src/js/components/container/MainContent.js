@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Navigation from "./Navigation.js"
 import MenuOverlay from "./MenuOverlay.js"
+import ProjectMainGrid from "./ProjectMainGrid.js"
 
 class MainContent extends Component {
 
@@ -29,6 +30,7 @@ class MainContent extends Component {
       <div id="main-content">
         <Navigation menuOpen={this.state.menuOpen} openMenuCommand={this.toggleMenu} />
         <MenuOverlay />
+        <ProjectMainGrid />
       </div>
       )
 
