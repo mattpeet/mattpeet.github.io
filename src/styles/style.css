@@ -2,6 +2,10 @@ body {
   font-family: Futura, sans-serif;
 }
 
+#app-container {
+  padding: 0;
+}
+
 /* Font Awesome icons */
 
 i {
@@ -18,14 +22,19 @@ a i {
   padding: 25px;
 }
 
+
 .social-and-nav i {
   padding-left: 15px;
   padding-right: 0px;
 }
 
 .social-links {
-  padding: 0px;
+  padding: 10px 25px 10px 25px;
   float: left;
+}
+
+.nav-end {
+  padding: 10px 40px 10px 25px;
 }
 
 #hamburger-menu {
@@ -46,3 +55,4 @@ a i {
     visibility: hidden;
   }
 }
+
