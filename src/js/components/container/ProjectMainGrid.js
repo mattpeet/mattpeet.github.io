@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ProjectFactory from "../../models/ProjectFactory.js"
 import ProjectImageCarousel from "../presentational/ProjectImageCarousel.js"
+import ProjectThumbnail from "../presentational/ProjectThumbnail.js"
 
 
 class ProjectMainGrid extends Component {
@@ -33,12 +34,17 @@ class ProjectMainGrid extends Component {
 
     
     if(this.state.mode == ProjectMainGrid.OVERVIEW_MODE) {
+
+      var thumbs = projects.map((project, index) => {
+        return <ProjectThumbnail image={project.images[0]} key={index} />
+      })
       return (
-        <div id="main-project-grid">
+        <div className="main-project-grid" id="overview-grid">
+          {thumbs}
         </div>
         )
     } else {
-      <div id="main-project-grid">
+      <div className="main-project-grid">
       <ProjectImageCarousel images={activeProject.images} />
       </div>
     }

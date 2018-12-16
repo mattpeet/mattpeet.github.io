@@ -149,9 +149,9 @@ a i {
 }
 
 @media(min-width: 768px) and (orientation: landscape) {
-  #main-project-grid {
+  .main-project-grid {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 1 / span 2;
   }
 }
 
@@ -172,5 +172,28 @@ a i {
   #project-list-container {
     grid-column: 2;
   }
+}
+
+/* Project Overview Grid */
+
+#overview-grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+@media(min-width: 768px)  {
+  #overview-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+.project-thumbnail {
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  height: 275px;
 }
 
