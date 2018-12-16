@@ -30,6 +30,17 @@ class ProjectFactory {
 
     projects[1] = projectTwo
 
+    // **** PROJECT 3 **** //
+
+    var projectThree = new Project()
+    projectThree.setTitle("Project 3")
+    projectThree.setDescription("Description of project 3")
+    projectThree.setCategory("illustration")
+    projectThree.setSubCategory("editorial")
+    projectThree.addImage("https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG")
+
+    projects[2] = projectThree
+
     return projects
   }
 

@@ -21,22 +21,30 @@ class ProjectMainGrid extends Component {
     super(props)
 
     this.state = {
-      mode: ProjectMainGrid.OVERVIEW_MODE
+      mode: ProjectMainGrid.OVERVIEW_MODE,
+      activeProject: 0
     }
+    this.onThumbnailClick = this.onThumbnailClick.bind(this)
+  }
+
+  onThumbnailClick(index) {
+    console.log("on thumb click: " + index)
+    this.setState({
+      mode: ProjectMainGrid.PROJECT_DETAIL_MODE,
+      activeProject: index
+    })
   }
 
   render() {
     var factory = new ProjectFactory()
     var projects = factory.getArtistProjects()
-    var titleOne = projects[0].title
-
-    var activeProject = projects[0]
-
+    var activeProject = projects[this.state.activeProject]
+    console.log("activeProject: " + activeProject.title)
     
     if(this.state.mode == ProjectMainGrid.OVERVIEW_MODE) {
 
       var thumbs = projects.map((project, index) => {
-        return <ProjectThumbnail image={project.images[0]} key={index} />
+        return <ProjectThumbnail image={project.images[0]} key={index} index={index} clickHandler={this.onThumbnailClick} />
       })
       return (
         <div className="main-project-grid" id="overview-grid">
@@ -44,9 +52,12 @@ class ProjectMainGrid extends Component {
         </div>
         )
     } else {
-      <div className="main-project-grid">
-      <ProjectImageCarousel images={activeProject.images} />
-      </div>
+      return (
+        <div className="main-project-grid">
+          <ProjectImageCarousel images={activeProject.images} />
+        </div>
+        )
+    
     }
   }
 }
