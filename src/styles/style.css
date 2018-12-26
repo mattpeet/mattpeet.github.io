@@ -219,7 +219,31 @@ a i {
 
 /* Project Detail View */
 
+#carousel {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#project-info-footer-collapsed {
+  float: right;
+  margin-top: 15px;
+}
+
+#project-info-footer-collapsed  i {
+  color: gray;
+}
+
 .project-caption-container {
-  
+  display: grid;
+  grid-template-columns: auto 15px;
+  background: gray;
+  padding:15px 20px 15px 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.project-caption-container  p, i {
+  color: white;
 }
 
