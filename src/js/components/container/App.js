@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import Header from "./Header.js"
 import Navigation from "./Navigation.js"
 import ProjectMainGrid from "./ProjectMainGrid.js"
+import ProjectDetailContainer from "./ProjectDetailContainer.js"
+import { BrowserRouter } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
 
@@ -11,11 +14,22 @@ class App extends Component {
       <div className="app-container">
         <Header />
         <Navigation />
-        <ProjectMainGrid />
+        <Main />
       </div>
     );
   }
 }
+
+const Main = () => (
+
+  <Switch>
+    <Route exact path='/' component={ProjectMainGrid} />
+    <Route path='/:projectId' component={ProjectDetailContainer} />
+  </Switch>
+
+)
 export default App;
 const wrapper = document.getElementById("app-container");
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
+wrapper ? ReactDOM.render(
+  <BrowserRouter><App /></BrowserRouter>, wrapper
+  ) : false;

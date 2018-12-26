@@ -1,22 +1,21 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { Link } from 'react-router-dom'
 
 class ProjectThumnail extends Component {
 
   constructor(props) {
     super(props)
-    this.handleClick = this.handleClick.bind(this)
-  }
-
-  handleClick() {
-    this.props.clickHandler(this.props.index)
   }
 
   render() {
     let background = "url(" + this.props.image + ")"
+    let link = "/" + this.props.index
     return (
-      <div className="project-thumbnail" style={{backgroundImage: background, backgroundSize: 'cover'}} onClick={this.handleClick}>
-      </div>
+      <Link to={link} >
+        <div className="project-thumbnail" style={{backgroundImage: background, backgroundSize: 'cover'}}>
+        </div>
+      </Link>
       )
   }
 
