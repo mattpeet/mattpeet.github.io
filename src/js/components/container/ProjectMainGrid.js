@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ProjectFactory from "../../models/ProjectFactory.js"
-import ProjectImageCarousel from "../presentational/ProjectImageCarousel.js"
 import ProjectThumbnail from "../presentational/ProjectThumbnail.js"
+import ProjectDetailContainer from "./ProjectDetailContainer.js"
 
 
 class ProjectMainGrid extends Component {
@@ -28,7 +28,6 @@ class ProjectMainGrid extends Component {
   }
 
   onThumbnailClick(index) {
-    console.log("on thumb click: " + index)
     this.setState({
       mode: ProjectMainGrid.PROJECT_DETAIL_MODE,
       activeProject: index
@@ -39,7 +38,6 @@ class ProjectMainGrid extends Component {
     var factory = new ProjectFactory()
     var projects = factory.getArtistProjects()
     var activeProject = projects[this.state.activeProject]
-    console.log("activeProject: " + activeProject.title)
     
     if(this.state.mode == ProjectMainGrid.OVERVIEW_MODE) {
 
@@ -53,9 +51,7 @@ class ProjectMainGrid extends Component {
         )
     } else {
       return (
-        <div className="main-project-grid">
-          <ProjectImageCarousel images={activeProject.images} />
-        </div>
+        <ProjectDetailContainer activeProject={activeProject} />
         )
     
     }

@@ -9,7 +9,6 @@ class ProjectThumnail extends Component {
   }
 
   handleClick() {
-    console.log("handle click: " + this.props.index)
     this.props.clickHandler(this.props.index)
   }
 
