@@ -21,6 +21,7 @@ class ProjectImageCarousel extends Component {
         activeIndex: selectedIndex,
         direction: e.direction
       });
+      this.props.selectHandler(selectedIndex)
     }
 
   render() {
@@ -28,7 +29,7 @@ class ProjectImageCarousel extends Component {
 
     if(this.props.images) {
       const thumbnails = this.props.images.map((image, index) => {
-        return <SlideImage image={image} key={index} id={index} activeIndex={activeIndex} />
+        return <SlideImage image={image.source} key={index} id={index} activeIndex={activeIndex} />
       })
 
       return (

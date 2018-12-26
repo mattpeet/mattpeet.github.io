@@ -16,7 +16,7 @@ class ProjectMainGrid extends Component {
     var projects = factory.getArtistProjects()
     
     var thumbs = projects.map((project, index) => {
-      return <ProjectThumbnail image={project.images[0]} key={index} index={index} clickHandler={this.onThumbnailClick} />
+      return <ProjectThumbnail image={project.images[0].source} key={index} index={index} clickHandler={this.onThumbnailClick} />
     })
     return (
       <div className="main-project-grid" id="overview-grid">

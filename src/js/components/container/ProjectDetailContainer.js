@@ -16,9 +16,15 @@ class ProjectDetailContainer extends Component {
     var activeProject = projects[activeProjectIndex]
     this.state = {
       activeProject: activeProject,
+      selectedImage: 0,
       captionVisible: false
     }
     this.onCaptionToggleClick = this.onCaptionToggleClick.bind(this)
+    this.handleImageSelect = this.handleImageSelect.bind(this)
+  }
+
+  handleImageSelect(selection) {
+    this.setState({selectedImage: selection})
   }
 
   onCaptionToggleClick() {
@@ -33,14 +39,14 @@ class ProjectDetailContainer extends Component {
     if(this.state.captionVisible) {
       return (
           <div className="main-project-grid">
-            <ProjectImageCarousel images={this.state.activeProject.images} />
-            <ProjectCaption captionText={this.state.activeProject.description} clickHandler={this.onCaptionToggleClick} />
+            <ProjectImageCarousel images={this.state.activeProject.images} selectHandler={this.handleImageSelect} />
+            <ProjectCaption captionText={this.state.activeProject.images[this.state.selectedImage].title} descriptionText={this.state.activeProject.images[this.state.selectedImage].description} clickHandler={this.onCaptionToggleClick} />
           </div>
         )
     } else {
       return (
           <div className="main-project-grid">
-            <ProjectImageCarousel images={this.state.activeProject.images} />
+            <ProjectImageCarousel images={this.state.activeProject.images} selectHandler={this.handleImageSelect}/>
             <ProjectInfoFooterCollapsed clickHandler={this.onCaptionToggleClick} />
           </div>
         )
