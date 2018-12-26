@@ -4,9 +4,9 @@ import ReactDOM from "react-dom";
 const ProjectCaption = (props) => {
 
   return (
-    <div className="project-caption-container" onClick={props.clickHandler}>
+    <div className="project-caption-container">
       <p>{props.captionText}</p>
-      <i className="fas fa-times"></i>
+      <i className="fas fa-times" onClick={props.clickHandler}></i>
     </div>
     )
 }
