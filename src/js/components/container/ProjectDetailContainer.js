@@ -38,14 +38,14 @@ class ProjectDetailContainer extends Component {
 
     if(this.state.captionVisible) {
       return (
-          <div className="main-project-grid">
+          <div className="main-project-grid" id="project-detail-container">
             <ProjectImageCarousel images={this.state.activeProject.images} selectHandler={this.handleImageSelect} />
             <ProjectCaption captionText={this.state.activeProject.images[this.state.selectedImage].title} descriptionText={this.state.activeProject.images[this.state.selectedImage].description} clickHandler={this.onCaptionToggleClick} />
           </div>
         )
     } else {
       return (
-          <div className="main-project-grid">
+          <div className="main-project-grid" id="project-detail-container">
             <ProjectImageCarousel images={this.state.activeProject.images} selectHandler={this.handleImageSelect}/>
             <ProjectInfoFooterCollapsed clickHandler={this.onCaptionToggleClick} />
           </div>

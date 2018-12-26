@@ -219,6 +219,11 @@ a i {
 
 /* Project Detail View */
 
+#project-detail-container {
+  display: grid;
+  grid-auto-rows: min-content;
+}
+
 #carousel {
   margin-top: 20px;
   margin-left: auto;
@@ -226,8 +231,9 @@ a i {
 }
 
 #project-info-footer-collapsed {
-  float: right;
   margin-top: 15px;
+  display: grid;
+  justify-content: right;
 }
 
 #project-info-footer-collapsed  i {
