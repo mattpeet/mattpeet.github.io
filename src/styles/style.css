@@ -238,6 +238,31 @@ a i {
   margin-right: auto;
 }
 
+.item {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.glyphicon {
+  color: gray;
+}
+
+.glyphicon-chevron-right:before {
+  content: "\e258";
+}
+
+.glyphicon-chevron-left:before {
+  content: "\e257";
+}
+
 #project-info-footer-collapsed {
   margin-top: 15px;
   display: grid;
@@ -277,6 +302,20 @@ a i {
   margin-left: 15px;
 }
 
+@media(orientation: landscape) {
+  .item {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+
+@media(min-width: 768px) {
+  .item {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+}
+
 @media(min-width: 768px) and (orientation: portrait) {
   #toggleable-project-detail-container {
     display: grid;
@@ -310,7 +349,7 @@ a i {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   #toggleable-project-detail-container {
     display: none;
   }
@@ -333,6 +372,11 @@ a i {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .item {
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   .project-caption-container {
