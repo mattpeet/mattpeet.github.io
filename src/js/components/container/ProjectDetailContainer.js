@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ProjectFactory from "../../models/ProjectFactory.js"
-import ProjectImageCarousel from "../presentational/ProjectImageCarousel.js"
-import ProjectInfoFooterCollapsed from "../presentational/ProjectInfoFooterCollapsed.js"
-import ProjectCaption from "../presentational/ProjectCaption.js"
+import ToggleableCaptionContainer from "../presentational/ToggleableCaptionContainer.js"
+import NoToggleCaptionContainer from "../presentational/NoToggleCaptionContainer.js"
 
 class ProjectDetailContainer extends Component {
 
@@ -35,22 +34,13 @@ class ProjectDetailContainer extends Component {
   }
 
   render() {
+    return (
+      <div className="main-project-grid">
+        <ToggleableCaptionContainer activeProject={this.state.activeProject} handleImageSelect={this.handleImageSelect} selectedImage={this.state.selectedImage} onCaptionToggleClick={this.onCaptionToggleClick} captionVisible={this.state.captionVisible} />
+        <NoToggleCaptionContainer activeProject={this.state.activeProject} handleImageSelect={this.handleImageSelect} selectedImage={this.state.selectedImage} />
+      </div>
 
-    if(this.state.captionVisible) {
-      return (
-          <div className="main-project-grid" id="project-detail-container">
-            <ProjectImageCarousel images={this.state.activeProject.images} selectHandler={this.handleImageSelect} />
-            <ProjectCaption captionText={this.state.activeProject.images[this.state.selectedImage].title} descriptionText={this.state.activeProject.images[this.state.selectedImage].description} clickHandler={this.onCaptionToggleClick} />
-          </div>
-        )
-    } else {
-      return (
-          <div className="main-project-grid" id="project-detail-container">
-            <ProjectImageCarousel images={this.state.activeProject.images} selectHandler={this.handleImageSelect}/>
-            <ProjectInfoFooterCollapsed clickHandler={this.onCaptionToggleClick} />
-          </div>
-        )
-    }
+      )
     
   }
 
