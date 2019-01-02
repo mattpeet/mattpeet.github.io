@@ -251,6 +251,10 @@ a i {
   background-image: none;
 }
 
+.carousel-indicators {
+  display: none;
+}
+
 .glyphicon {
   color: gray;
 }
