@@ -10,7 +10,7 @@ class ProjectDetailContainer extends Component {
     super(props)
     var factory = new ProjectFactory()
     var projects = factory.getArtistProjects()
-
+    console.log("accessing detail")
     var activeProjectIndex = props.match.params.projectId
     var activeProject = projects[activeProjectIndex]
     this.state = {

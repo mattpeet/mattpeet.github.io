@@ -9,11 +9,22 @@ class ProjectMainGrid extends Component {
 
   constructor(props) {
     super(props)
+    
+
+
   }
+
 
   render() {
     var factory = new ProjectFactory()
-    var projects = factory.getArtistProjects()
+    var filterCategory = this.props.match.params.categoryId
+
+    var projects
+    if(filterCategory !== undefined) {
+      projects = factory.getFilteredProjects(filterCategory)
+    } else {
+      projects = factory.getArtistProjects()
+    } 
     
     var thumbs = projects.map((project, index) => {
       return <ProjectThumbnail image={project.images[0].source} key={index} index={index} clickHandler={this.onThumbnailClick} />

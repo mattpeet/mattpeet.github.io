@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { Link } from 'react-router-dom'
 
 class SideNavigation extends Component {
 
@@ -8,13 +9,13 @@ class SideNavigation extends Component {
       <div id="side-nav-container">
         <div id="project-filters">
           <ul>
-            <li><a href="#">illustration</a></li>
+            <Link to="/category/illustration"><li>illustration</li></Link>
               <ul>
                 <li><a href="#">editorial</a></li>
                 <li><a href="#">portraiture</a></li>
                 <li><a href="#">other</a></li>
               </ul>
-            <li><a href="#">comics</a></li>
+            <Link to="/category/comics"><li>comics</li></Link>
           </ul>
         </div>
         <div id="sundry-nav">
