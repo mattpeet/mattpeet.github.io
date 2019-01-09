@@ -4,6 +4,8 @@ import Header from "./Header.js"
 import Navigation from "./Navigation.js"
 import ProjectMainGrid from "./ProjectMainGrid.js"
 import ProjectDetailContainer from "./ProjectDetailContainer.js"
+import AboutContainer from "./AboutContainer.js"
+import ContactContainer from "./ContactContainer.js"
 import { HashRouter } from 'react-router-dom'
 import { Switch, Route } from 'react-router-dom'
 
@@ -26,6 +28,8 @@ const Main = () => (
     <Route exact path='/' component={ProjectMainGrid} />
     <Route path='/category/:categoryId/:subcategoryId' component={ProjectMainGrid} />
     <Route path='/category/:categoryId' component={ProjectMainGrid} />
+    <Route path="/about" component={AboutContainer} />
+    <Route path="/contact" component={ContactContainer} />
     <Route path='/:projectId' component={ProjectDetailContainer} />
   </Switch>
 

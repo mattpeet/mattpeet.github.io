@@ -19,8 +19,10 @@ class SideNavigation extends Component {
           </ul>
         </div>
         <div id="sundry-nav">
-          <a href="#" className="text-nav-link">about</a>
-          <a href="#" className="text-nav-link">contact</a>
+          <ul>
+          <Link to="/about"><li>about</li></Link>
+          <Link to="/contact"><li>contact</li></Link>
+          </ul>
         </div>
       </div>
 

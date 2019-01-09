@@ -20,7 +20,6 @@ class ProjectMainGrid extends Component {
     var filterCategory = this.props.match.params.categoryId
     var filterSubcategory = this.props.match.params.subcategoryId
 
-    console.log("subcat: " + filterSubcategory)
     var projects
     if(filterCategory !== undefined) {
       projects = factory.getFilteredProjects(filterCategory, filterSubcategory)

@@ -7,6 +7,16 @@ html {
   height: 100%;
 }
 
+a {
+  color: black;
+}
+
+a:hover {
+  color: gray;
+}
+
+
+
 #app-container {
   padding: 0;
   min-height: 100vh;
@@ -29,7 +39,7 @@ html {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .app-container {
     display: grid;
     grid-template-columns: 25% auto;
@@ -46,6 +56,16 @@ html {
 }
 
 @media(min-width: 768px) and (orientation: landscape) {
+  #navigation-content {
+    grid-column: 1;
+    display: grid;
+    padding-left:25px;
+    padding-right: 25px;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+@media(min-width: 1024px) {
   #navigation-content {
     grid-column: 1;
     display: grid;
@@ -73,6 +93,13 @@ a i {
 }
 
 @media(min-width: 768px) and (orientation: landscape) {
+  .header-container {
+    padding: 25px;
+    grid-column: 1;
+  }
+}
+
+@media(min-width: 1024px) {
   .header-container {
     padding: 25px;
     grid-column: 1;
@@ -108,6 +135,12 @@ a i {
   }
 }
 
+@media(min-width: 1024px) {
+  #hamburger-menu {
+    visibility: hidden;
+  }
+}
+
 /* Side navigation (desktop) */
 
 #side-nav-container {
@@ -115,20 +148,20 @@ a i {
   height: 100%;
 }
 
-#project-filters ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
   font-size: 22px;
 }
 
-#project-filters ul ul li {
+ul ul li {
   padding-left: 20px;
   padding-bottom: 5px;
   font-size: 16px;
 }
 
-#sundry-nav {
+#sundry-nav ul {
   margin-top: 30px;
   font-size: 16px;
 }
@@ -150,6 +183,14 @@ a i {
   }
 }
 
+@media(min-width: 1024px) {
+  #copyright-notice {
+    display: block;
+    font-size: 12px;
+    grid-row: 3;
+  }
+}
+
 
 /* Main Grid Content */
 
@@ -163,11 +204,30 @@ a i {
     grid-column: 2;
     grid-row: 1 / span 2;
   }
+
+  #main-project-grid-container {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 20% auto;
+  }
+
+  #side-nav-container {
+    display: block;
+    margin-top: 30px;
+  }
+
+  #project-list-container {
+    grid-column: 2;
+  }
 }
 
+@media(min-width: 1024px) {
+  .main-project-grid {
+    margin-top: 25px;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
 
-
-@media(min-width: 768px) and (orientation: landscape) {
   #main-project-grid-container {
     padding: 25px;
     display: grid;
@@ -200,7 +260,7 @@ a i {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   #overview-grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -403,6 +463,38 @@ a i {
 
   .caption-description {
     grid-row: 2;
+  }
+}
+
+/* About */
+
+.about-container {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    margin-top: 100px;
+  }
+}
+
+/* Contact */
+
+.contact-container {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 1024px) {
+  .contact-container {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+    margin-top: 100px;
   }
 }
 
