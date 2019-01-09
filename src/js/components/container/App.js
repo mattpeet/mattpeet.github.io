@@ -24,6 +24,7 @@ const Main = () => (
 
   <Switch>
     <Route exact path='/' component={ProjectMainGrid} />
+    <Route path='/category/:categoryId/:subcategoryId' component={ProjectMainGrid} />
     <Route path='/category/:categoryId' component={ProjectMainGrid} />
     <Route path='/:projectId' component={ProjectDetailContainer} />
   </Switch>

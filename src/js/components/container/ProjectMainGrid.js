@@ -18,10 +18,12 @@ class ProjectMainGrid extends Component {
   render() {
     var factory = new ProjectFactory()
     var filterCategory = this.props.match.params.categoryId
+    var filterSubcategory = this.props.match.params.subcategoryId
 
+    console.log("subcat: " + filterSubcategory)
     var projects
     if(filterCategory !== undefined) {
-      projects = factory.getFilteredProjects(filterCategory)
+      projects = factory.getFilteredProjects(filterCategory, filterSubcategory)
     } else {
       projects = factory.getArtistProjects()
     } 

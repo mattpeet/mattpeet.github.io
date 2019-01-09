@@ -11,9 +11,9 @@ class SideNavigation extends Component {
           <ul>
             <Link to="/category/illustration"><li>illustration</li></Link>
               <ul>
-                <li><a href="#">editorial</a></li>
-                <li><a href="#">portraiture</a></li>
-                <li><a href="#">other</a></li>
+                <Link to="/category/illustration/editorial"><li>editorial</li></Link>
+                <Link to="/category/illustration/portraiture"><li>portraiture</li></Link>
+                <Link to="/category/illustration/other"><li>other</li></Link>
               </ul>
             <Link to="/category/comics"><li>comics</li></Link>
           </ul>

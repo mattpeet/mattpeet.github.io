@@ -52,7 +52,7 @@ class ProjectFactory {
 
         var projectThree = new Project()
         projectThree.setCategory(ProjectFactory.illustrationCategory.name)
-        projectThree.setSubCategory("editorial")
+        projectThree.setSubCategory("portraiture")
         projectThree.addImage(new ProjectImage("Proj three image 1", "desc for proj three image 1" , "https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG"))
 
         this.projects[2] = projectThree
@@ -63,11 +63,15 @@ class ProjectFactory {
         return this.projects
     }
 
-    getFilteredProjects(categoryName) {
-        return this.projects.filter(proj => proj.category == categoryName)
-        
+    getFilteredProjects(categoryName, subcategoryName) {
+        return this.projects.filter((proj) => {
+            if(subcategoryName !== undefined) {
+                return proj.category == categoryName && proj.subcategory == subcategoryName 
+            } else {
+                return proj.category == categoryName
+            }
+        })
     }
-
 }
 
 export default ProjectFactory
