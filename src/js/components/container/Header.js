@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
 
   render() {
     return (
       <div className="header-container">
-        <div>
-          <h1 id="illustrator-name">MATT PEET</h1>
-        </div>
-        <div>
-          <h3 id="header-subtitle">illustration</h3>
-        </div>
+        <Link to="/"><img src="./../src/img/LOGO_95x22_72dpi.png" id="headerImage" /></Link>
       </div>
     );
   }

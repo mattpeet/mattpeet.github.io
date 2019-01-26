@@ -34,8 +34,8 @@ class ProjectFactory {
         var projectOne = new Project()
         projectOne.setCategory(ProjectFactory.illustrationCategory.name)
         projectOne.setSubCategory("editorial")
-        projectOne.addImage(new ProjectImage("Mermaid", "Mermaid Description", "../../img/BBCHistoryMermaid_image_1230x1000px.jpg"))
-        projectOne.addImage(new ProjectImage("Image title 2", "Desc. for image 2", "../../img/BBCHistoryMermaid_mockup_1000x1335px.jpg"))
+        projectOne.addImage(new ProjectImage("Mermaid", "Mermaid Description", "./../src/img/BBCHistoryMermaid_image_1230x1000px.jpg"))
+        projectOne.addImage(new ProjectImage("Image title 2", "Desc. for image 2", "./../src/img/BBCHistoryMermaid_mockup_1000x1335px.jpg"))
 
         this.projects[0] = projectOne
 
