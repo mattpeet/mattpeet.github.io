@@ -250,6 +250,7 @@ ul ul li {
   display: grid;
   grid-template-columns: auto;
   grid-auto-rows: min-content;
+  padding-bottom: 25px;
 }
 
 @media(min-width: 768px)  {
