@@ -27,15 +27,15 @@ class ProjectFactory {
     }
 
     constructor(){
-
+        // project.addImage(<IMAGE TITLE>, <IMAGE DESCRIPTION>, <PATH TO FILE(./../src/img/<FILENAME>)>)
         this.projects = []
 
         // **** PROJECT 1 **** //
         var projectOne = new Project()
         projectOne.setCategory(ProjectFactory.illustrationCategory.name)
         projectOne.setSubCategory("editorial")
-        projectOne.addImage(new ProjectImage("Mermaid", "Mermaid Description", "./../src/img/BBCHistoryMermaid_image_1230x1000px.jpg"))
-        projectOne.addImage(new ProjectImage("Image title 2", "Desc. for image 2", "./../src/img/BBCHistoryMermaid_mockup_1000x1335px.jpg"))
+        projectOne.addImage(new ProjectImage("Mermaid", "Mermaid Description", "./../src/img/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
+        projectOne.addImage(new ProjectImage("Image title 2", "Desc. for image 2", "./../src/img/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
         this.projects[0] = projectOne
 
@@ -43,7 +43,9 @@ class ProjectFactory {
         var projectTwo = new Project()
         projectTwo.setCategory(ProjectFactory.comicsCategory.name)
         projectTwo.setSubCategory("editorial")
-        projectTwo.addImage(new ProjectImage("Proj 2 title for image 1", "Description for project two image 1", "https://vetstreet.brightspotcdn.com/dims4/default/a2b630f/2147483647/thumbnail/645x380/quality/90/?url=https%3A%2F%2Fvetstreet-brightspot.s3.amazonaws.com%2F3e%2Ffe5980c82011e09b940050568d6ceb%2Ffile%2FLurcher-5-AP-645km081611.jpg"))
+        projectTwo.addImage(new ProjectImage("Keeper Magazine portrait", "Description", "./../src/img/Keeper-Oct18-MAIN-IMAGE-710x1000px.jpg"))
+        projectTwo.addImage(new ProjectImage("Keeper Magazine drop in", "Description", "./../src/img/Keeper-Oct18-DROPIN-564x500px.jpg"))
+        projectTwo.addImage(new ProjectImage("Keeper Magazine page", "", "./../src/img/Keeper-Oct18-Page1-750x1000px.jpg"))
 
         this.projects[1] = projectTwo
 
@@ -53,7 +55,9 @@ class ProjectFactory {
         var projectThree = new Project()
         projectThree.setCategory(ProjectFactory.illustrationCategory.name)
         projectThree.setSubCategory("portraiture")
-        projectThree.addImage(new ProjectImage("Proj three image 1", "desc for proj three image 1" , "https://upload.wikimedia.org/wikipedia/commons/0/0f/Grosser_Panda.JPG"))
+        projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh 2018", "December, John Jackson" , "./../src/img/CMEdi2018-DEC-John-Jackson_825x1000px.jpg"))
+        projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh 2018", "Description" , "./../src/img/CMEdi2018-COMPOSITE_1-1000x750px.jpg"))
+        projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh 2018", "Description" , "./../src/img/CMEdi2018-COMPOSITE_2-1000x750px.jpg"))
 
         this.projects[2] = projectThree
         
