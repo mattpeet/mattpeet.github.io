@@ -39,11 +39,11 @@ class SocialAndMenuNavigation extends Component {
     return(
       <div className="social-and-nav">
         <div className="social-links">
-          <a href={this.artist.instagram} target="_blank"><i className="fab fa-instagram"></i></a>
-          <a href={this.artist.twitter} target="_blank"><i className="fab fa-twitter"></i></a>
-          <a href={this.artist.tumblr} target="_blank"><i className="fab fa-tumblr-square"></i></a>
-          <a href={this.artist.facebook} target="_blank"><i className="fab fa-facebook-square"></i></a>
-          <a href={'mailto:' + this.artist.email}><i className="fas fa-envelope"></i></a>
+          <a href={this.artist.instagram.linkUrl} target="_blank"><i className="fab fa-instagram"></i></a>
+          <a href={this.artist.twitter.linkUrl} target="_blank"><i className="fab fa-twitter"></i></a>
+          <a href={this.artist.tumblr.linkUrl} target="_blank"><i className="fab fa-tumblr-square"></i></a>
+          <a href={this.artist.facebook.linkUrl} target="_blank"><i className="fab fa-facebook-square"></i></a>
+          <a href={'mailto:' + this.artist.email.linkUrl}><i className="fas fa-envelope"></i></a>
         </div>
         <div className="nav-end">
           <i id="hamburger-menu" className={'fas ' + this.getMenuIcon()} onClick={this.toggleMenu}></i>

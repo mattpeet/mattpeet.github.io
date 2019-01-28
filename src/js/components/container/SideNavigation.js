@@ -9,13 +9,8 @@ class SideNavigation extends Component {
       <div id="side-nav-container">
         <div id="project-filters">
           <ul>
-            <Link to="/category/illustration"><li>illustration</li></Link>
-              <ul>
-                <Link to="/category/illustration/editorial"><li>editorial</li></Link>
-                <Link to="/category/illustration/portraiture"><li>portraiture</li></Link>
-                <Link to="/category/illustration/other"><li>other</li></Link>
-              </ul>
-            <Link to="/category/comics"><li>comics</li></Link>
+            <Link to="/"><li>illustration</li></Link>
+           
           </ul>
         </div>
         <div id="sundry-nav">
@@ -31,3 +26,24 @@ class SideNavigation extends Component {
 }
 
 export default SideNavigation
+
+
+      // <div id="side-nav-container">
+      //   <div id="project-filters">
+      //     <ul>
+      //       <Link to="/category/illustration"><li>illustration</li></Link>
+      //         <ul>
+      //           <Link to="/category/illustration/editorial"><li>editorial</li></Link>
+      //           <Link to="/category/illustration/portraiture"><li>portraiture</li></Link>
+      //           <Link to="/category/illustration/other"><li>other</li></Link>
+      //         </ul>
+      //       <Link to="/category/comics"><li>comics</li></Link>
+      //     </ul>
+      //   </div>
+      //   <div id="sundry-nav">
+      //     <ul>
+      //     <Link to="/about"><li>about</li></Link>
+      //     <Link to="/contact"><li>contact</li></Link>
+      //     </ul>
+      //   </div>
+      // </div>

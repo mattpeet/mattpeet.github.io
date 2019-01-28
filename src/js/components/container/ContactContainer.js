@@ -8,13 +8,10 @@ class ContactContainer extends Component {
   render() {
     var artist = new ArtistDetails()
     var icons = ["fab fa-instagram", "fab fa-twitter", "fab fa-tumblr-square", "fab fa-facebook-square", "fas fa-envelope"]
-    var links = [artist.instagram, artist.twitter, artist.tumblr, artist.facebook, artist.email]
-    links.forEach((link, index) => {
-      links[index] = link.replace("http://", "")
-      links[index] = links[index].replace("https://", "")
-    })
+    var linkDetails = [artist.instagram, artist.twitter, artist.tumblr, artist.facebook, artist.email]
+   
     var rows = icons.map((icon, index) => {
-      return <ContactDetailRow key={index} iconClassName={icon} targetLink={links[index]} />
+      return <ContactDetailRow key={index} iconClassName={icon} targetLink={linkDetails[index].linkUrl} nameOfLink={linkDetails[index].linkName} />
     })
     return (
       <div className="contact-container">

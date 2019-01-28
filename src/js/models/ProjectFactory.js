@@ -28,12 +28,14 @@ class ProjectFactory {
 
     constructor(){
         // project.addImage(<IMAGE TITLE>, <IMAGE DESCRIPTION>, <PATH TO FILE(./../src/img/<FILENAME>)>)
+
+
         this.projects = []
 
         // **** PROJECT 1 **** //
         var projectOne = new Project()
         projectOne.setCategory(ProjectFactory.illustrationCategory.name)
-        projectOne.setSubCategory("editorial")
+        // projectOne.setSubCategory("editorial")
         projectOne.addImage(new ProjectImage("Mermaid", "Mermaid Description", "./../src/img/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("Image title 2", "Desc. for image 2", "./../src/img/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
@@ -41,8 +43,8 @@ class ProjectFactory {
 
         // **** PROJECT 2 **** //
         var projectTwo = new Project()
-        projectTwo.setCategory(ProjectFactory.comicsCategory.name)
-        projectTwo.setSubCategory("editorial")
+        projectTwo.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectTwo.setSubCategory("editorial")
         projectTwo.addImage(new ProjectImage("Keeper Magazine portrait", "Description", "./../src/img/Keeper-Oct18-MAIN-IMAGE-710x1000px.jpg"))
         projectTwo.addImage(new ProjectImage("Keeper Magazine drop in", "Description", "./../src/img/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("Keeper Magazine page", "", "./../src/img/Keeper-Oct18-Page1-750x1000px.jpg"))
@@ -54,7 +56,7 @@ class ProjectFactory {
 
         var projectThree = new Project()
         projectThree.setCategory(ProjectFactory.illustrationCategory.name)
-        projectThree.setSubCategory("portraiture")
+        // projectThree.setSubCategory("portraiture")
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh 2018", "December, John Jackson" , "./../src/img/CMEdi2018-DEC-John-Jackson_825x1000px.jpg"))
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh 2018", "Description" , "./../src/img/CMEdi2018-COMPOSITE_1-1000x750px.jpg"))
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh 2018", "Description" , "./../src/img/CMEdi2018-COMPOSITE_2-1000x750px.jpg"))
