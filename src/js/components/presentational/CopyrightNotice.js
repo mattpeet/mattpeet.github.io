@@ -6,7 +6,7 @@ class CopyrightNotice extends Component {
   render() {
     return (
       <div id="copyright-notice">
-        <p>&copy; 2018 Matt Peet</p>
+        <p>&copy; 2019 Matt Peet</p>
       </div>
       )
   }
