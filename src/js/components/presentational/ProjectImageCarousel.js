@@ -31,9 +31,16 @@ class ProjectImageCarousel extends Component {
       const thumbnails = this.props.images.map((image, index) => {
         return <SlideImage image={image.source} key={index} id={index} activeIndex={activeIndex} />
       })
+      
+      var hideScrollToggle = ""
+
+      if(this.props.images.length == 1) {
+        hideScrollToggle = "hiddenScroll"
+      } 
+    
 
       return (
-       <div id="carousel">
+       <div id="carousel" className={hideScrollToggle}>
         <Carousel activeIndex={activeIndex} direction={direction} onSelect={this.handleSelect}>
           {thumbnails}
         </Carousel>

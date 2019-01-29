@@ -9,7 +9,7 @@ class SideNavigation extends Component {
       <div id="side-nav-container">
         <div id="project-filters">
           <ul>
-            <Link to="/"><li>illustration</li></Link>
+            <Link to="/"><li>projects</li></Link>
            
           </ul>
         </div>
