@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[5] = projectOne
+        this.projects[4] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[4] = projectTwo
+        this.projects[3] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -82,7 +82,7 @@ class ProjectFactory {
         projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/Buxton_880x1000px.jpg"))
         
 
-        this.projects[3] = projectFour
+        this.projects[2] = projectFour
 
 
         // **** TV 2018 **** //
@@ -104,7 +104,17 @@ class ProjectFactory {
                 
 
         this.projects[1] = projectFive
-        
+
+
+                // **** Trump **** //
+
+        var projectSix = new Project()
+        projectSix.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectSix.setSubCategory("portraiture")
+        projectSix.addImage(new ProjectImage("Donald Trump", "" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
+                
+
+        this.projects[5] = projectSix
     }
 
     getArtistProjects() {
