@@ -120,7 +120,7 @@ class ProjectFactory {
                 // **** This is America **** //
 
         var projectSeven = new Project()
-        projectSix.setCategory(ProjectFactory.illustrationCategory.name)
+        projectSeven.setCategory(ProjectFactory.illustrationCategory.name)
         // projectSeven.setSubCategory("portraiture")
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitA_885x1000px.jpg"))
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-COLLAGE_700x1000px.jpg"))
@@ -129,6 +129,38 @@ class ProjectFactory {
                 
 
         this.projects[6] = projectSeven
+
+
+                // **** Hannibals **** //
+
+        var projectEight = new Project()
+        projectEight.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectEight.setSubCategory("portraiture")
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitC_745x1000px.jpg"))
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitB_745x1000px.jpg"))
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitA_745x1000px.jpg"))
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitD_745x1000px.jpg"))
+       
+                
+
+        this.projects[7] = projectEight
+
+
+                // **** Vegans **** //
+
+        var projectNine = new Project()
+        projectNine.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Chef_820x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Baker_910x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Trainer_665x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Mum_740x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegans-mock-up-3_1000x640px.jpg"))
+        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg"))
+       
+                
+
+        this.projects[8] = projectNine
     }
 
     getArtistProjects() {
