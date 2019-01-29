@@ -7,7 +7,7 @@ var ArtistDetails = function() {
   this.twitter = new ArtistLinkDetail("@m_r_peet", "http://twitter.com/m_r_peet")
   this.email = new ArtistLinkDetail("matt@mattpeetillustration.com", "matt@mattpeetillustration.com")
 
-  this.about = "Matt Peet is a freelance illustrator based in Edinburgh."
+  this.about = "Matt is a freelance illustrator based in Edinburgh. He primarily works digitally, drawing people, portraits and characters. Get in touch to discuss any projects, commissions or collaborations."
 }
 
 export default ArtistDetails

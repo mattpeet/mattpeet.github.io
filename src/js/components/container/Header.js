@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header-container">
-        <Link to="/"><img src="./../src/img/MattPeetLOGO-500x116px.png" id="headerImage" /></Link>
+        <Link to="/"><img src="./../src/img/LOGO/MattPeetLOGO-500x116px.png" id="headerImage" /></Link>
       </div>
     );
   }
