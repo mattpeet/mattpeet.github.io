@@ -79,7 +79,7 @@ class ProjectFactory {
         projectFour.setCategory(ProjectFactory.illustrationCategory.name)
         // projectFour.setSubCategory("portraiture")
         projectFour.addImage(new ProjectImage("Adam Buxton", "The Adam Buxton Podcast" , "./../src/img/PODCASTERS/Buxton_880x1000px.jpg"))
-        projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/Buxton_880x1000px.jpg"))
+        projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/HipHop_900x1000.jpg"))
         
 
         this.projects[2] = projectFour
@@ -115,6 +115,20 @@ class ProjectFactory {
                 
 
         this.projects[5] = projectSix
+
+
+                // **** This is America **** //
+
+        var projectSeven = new Project()
+        projectSix.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectSeven.setSubCategory("portraiture")
+        projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitA_885x1000px.jpg"))
+        projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-COLLAGE_700x1000px.jpg"))
+        projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitB_700x1000px.jpg"))
+        projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitC_1000x690px.jpg"))
+                
+
+        this.projects[6] = projectSeven
     }
 
     getArtistProjects() {
