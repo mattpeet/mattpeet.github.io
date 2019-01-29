@@ -30,7 +30,7 @@ a:hover {
   padding: 0;
 }
 
-@media(min-width: 768px) and (orientation: landscape) {
+@media(min-width: 825px) and (orientation: landscape) {
   .app-container {
     display: grid;
     grid-template-columns: 30% auto;
@@ -55,7 +55,7 @@ a:hover {
   padding-right: 25px;
 }
 
-@media(min-width: 768px) and (orientation: landscape) {
+@media(min-width: 824px) and (orientation: landscape) {
   #navigation-content {
     grid-column: 1;
     display: grid;
@@ -98,7 +98,7 @@ a i {
   max-width: 200px;
 }
 
-@media(min-width: 768px) and (orientation: landscape) {
+@media(min-width: 824px) and (orientation: landscape) {
   .header-container {
     padding: 25px;
     grid-column: 1;
@@ -135,7 +135,7 @@ a i {
   -webkit-margin-before: 0;
 }
 
-@media(min-width: 768px) and (orientation: landscape) {
+@media(min-width: 824px) and (orientation: landscape) {
   #hamburger-menu {
     visibility: hidden;
   }
@@ -181,7 +181,7 @@ ul ul li {
   display: none;
 }
 
-@media(min-width: 768px) and (orientation: landscape) {
+@media(min-width: 824px) and (orientation: landscape) {
   #copyright-notice {
     display: block;
     font-size: 12px;
@@ -204,7 +204,11 @@ ul ul li {
   display: none;
 }
 
-@media(min-width: 768px) and (orientation: landscape) {
+.main-project-grid {
+  padding-bottom: 50px;
+}
+
+@media(min-width: 824px) and (orientation: landscape) {
   .main-project-grid {
     margin-top: 25px;
     grid-column: 2;
@@ -392,14 +396,14 @@ ul ul li {
   }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 824px) {
   .item {
     margin-left: 75px;
     margin-right: 75px;
   }
 }
 
-@media(min-width: 768px) and (orientation: portrait) {
+@media(min-width: 824px) and (orientation: portrait) {
   #toggleable-project-detail-container {
     display: grid;
     grid-template-columns: 50px auto 50px;
