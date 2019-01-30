@@ -151,12 +151,12 @@ class ProjectFactory {
         var projectNine = new Project()
         projectNine.setCategory(ProjectFactory.illustrationCategory.name)
         // projectNine.setSubCategory("portraiture")
-        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Chef_820x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Baker_910x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Trainer_665x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegan-Mum_740x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegans-mock-up-3_1000x640px.jpg"))
-        projectNine.addImage(new ProjectImage("", "" , "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "Chef" , "./../src/img/VEGANISM/Vegan-Chef_820x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "" , "./../src/img/VEGANISM/Vegan-Baker_910x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "" , "./../src/img/VEGANISM/Vegan-Trainer_665x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "" , "./../src/img/VEGANISM/Vegan-Mum_740x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan mock up", "(text: BBC News)" , "./../src/img/VEGANISM/Vegans-mock-up-3_1000x640px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan mock up", "(text: BBC News)", "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg"))
        
                 
 
