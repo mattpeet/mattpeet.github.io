@@ -111,7 +111,7 @@ class ProjectFactory {
         var projectSix = new Project()
         projectSix.setCategory(ProjectFactory.illustrationCategory.name)
         // projectSix.setSubCategory("portraiture")
-        projectSix.addImage(new ProjectImage("Donald Trump", "portrait - 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
+        projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
         this.projects[5] = projectSix
