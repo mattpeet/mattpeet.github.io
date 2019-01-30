@@ -111,7 +111,7 @@ class ProjectFactory {
         var projectSix = new Project()
         projectSix.setCategory(ProjectFactory.illustrationCategory.name)
         // projectSix.setSubCategory("portraiture")
-        projectSix.addImage(new ProjectImage("Donald Trump", "" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
+        projectSix.addImage(new ProjectImage("Donald Trump", "portrait - 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
         this.projects[5] = projectSix
@@ -137,9 +137,9 @@ class ProjectFactory {
         projectEight.setCategory(ProjectFactory.illustrationCategory.name)
         // projectEight.setSubCategory("portraiture")
         projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitC_745x1000px.jpg"))
-        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitB_745x1000px.jpg"))
-        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitA_745x1000px.jpg"))
-        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitD_745x1000px.jpg"))
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitB_995x1000px.jpg"))
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitA_1000x860px.jpg"))
+        projectEight.addImage(new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitD_1000x880px.jpg"))
        
                 
 
@@ -152,9 +152,9 @@ class ProjectFactory {
         projectNine.setCategory(ProjectFactory.illustrationCategory.name)
         // projectNine.setSubCategory("portraiture")
         projectNine.addImage(new ProjectImage("Vegan characters", "Chef" , "./../src/img/VEGANISM/Vegan-Chef_820x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("Vegan characters", "" , "./../src/img/VEGANISM/Vegan-Baker_910x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("Vegan characters", "" , "./../src/img/VEGANISM/Vegan-Trainer_665x1000px.jpg"))
-        projectNine.addImage(new ProjectImage("Vegan characters", "" , "./../src/img/VEGANISM/Vegan-Mum_740x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "Baker" , "./../src/img/VEGANISM/Vegan-Baker_910x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "Trainer" , "./../src/img/VEGANISM/Vegan-Trainer_665x1000px.jpg"))
+        projectNine.addImage(new ProjectImage("Vegan characters", "Parent" , "./../src/img/VEGANISM/Vegan-Mum_740x1000px.jpg"))
         projectNine.addImage(new ProjectImage("Vegan mock up", "(text: BBC News)" , "./../src/img/VEGANISM/Vegans-mock-up-3_1000x640px.jpg"))
         projectNine.addImage(new ProjectImage("Vegan mock up", "(text: BBC News)", "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg"))
        
