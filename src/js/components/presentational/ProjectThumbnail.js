@@ -10,7 +10,8 @@ class ProjectThumnail extends Component {
 
   render() {
     let background = "url(" + this.props.image + ")"
-    let link = "/" + this.props.index
+    let portraitCollection = this.props.isPortraitCollection
+    let link =  portraitCollection ? "/portraits/" + this.props.index : "/" + this.props.index
     return (
       <Link to={link} >
         <div className="project-thumbnail" style={{backgroundImage: background, backgroundSize: 'cover'}}>

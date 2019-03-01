@@ -9,7 +9,7 @@ class PortraitGallery extends Component {
     var factory = new ProjectFactory()
     var portraits = factory.getAllPortraits()
     var thumbs = portraits.map((portrait, index) => {
-      return <ProjectThumbnail image={portrait.source} key={index} index={index} />
+      return <ProjectThumbnail image={portrait.source} key={index} index={index} isPortraitCollection={true} />
     })
 
     return (

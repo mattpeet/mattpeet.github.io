@@ -4,6 +4,7 @@ import Header from "./Header.js"
 import Navigation from "./Navigation.js"
 import ProjectMainGrid from "./ProjectMainGrid.js"
 import ProjectDetailContainer from "./ProjectDetailContainer.js"
+import PortraitDetailContainer from "./PortraitDetailContainer.js"
 import AboutContainer from "./AboutContainer.js"
 import ContactContainer from "./ContactContainer.js"
 import PortraitureContainer from "./PortraitureContainer.js"
@@ -31,6 +32,7 @@ const Main = () => (
     <Route path='/category/:categoryId' component={ProjectMainGrid} />
     <Route path="/about" component={AboutContainer} />
     <Route path="/contact" component={ContactContainer} />
+    <Route path="/portraits/:portraitId" component={PortraitDetailContainer} />
     <Route path="/portraits" component={PortraitureContainer} />
     <Route path='/:projectId' component={ProjectDetailContainer} />
   </Switch>
