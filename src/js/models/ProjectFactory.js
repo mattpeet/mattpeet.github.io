@@ -28,6 +28,7 @@ class ProjectFactory {
 
     constructor(){
         // project.addImage(<IMAGE TITLE>, <IMAGE DESCRIPTION>, <PATH TO FILE(./../src/img/<FOLDER>/<FILENAME>)>)
+        this.setupPortraits = this.setupPortraits.bind(this)
 
 
         this.projects = []
@@ -161,6 +162,17 @@ class ProjectFactory {
                 
 
         this.projects[8] = projectNine
+
+        this.portraits = []
+        this.setupPortraits()
+    }
+
+    setupPortraits() {
+        this.portraits = []
+
+        this.portraits[0] = new ProjectImage("Vegan mock up", "(text: BBC News)", "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg")
+        this.portraits[1] = new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitC_745x1000px.jpg")
+
     }
 
     getArtistProjects() {
@@ -175,6 +187,10 @@ class ProjectFactory {
                 return proj.category == categoryName
             }
         })
+    }
+
+    getAllPortraits() {
+        return this.portraits
     }
 }
 

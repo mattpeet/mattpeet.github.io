@@ -256,7 +256,7 @@ ul ul li {
 
 /* Project Overview Grid */
 
-#overview-grid {
+.overview-grid {
   display: grid;
   grid-template-columns: auto;
   grid-auto-rows: min-content;
@@ -264,13 +264,13 @@ ul ul li {
 }
 
 @media(orientation: landscape) {
-  #overview-grid {
+  .overview-grid {
     grid-template-columns: auto auto;
   }
 }
 
 @media(min-width: 768px)  {
-  #overview-grid {
+  .overview-grid {
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-rows: min-content;
@@ -278,7 +278,7 @@ ul ul li {
 }
 
 @media (min-width: 1024px) {
-  #overview-grid {
+  .overview-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-auto-rows: min-content;

@@ -31,7 +31,7 @@ class ProjectMainGrid extends Component {
       return <ProjectThumbnail image={project.images[0].source} key={index} index={index} clickHandler={this.onThumbnailClick} />
     })
     return (
-      <div className="main-project-grid" id="overview-grid">
+      <div className="main-project-grid overview-grid">
         {thumbs}
       </div>
       )

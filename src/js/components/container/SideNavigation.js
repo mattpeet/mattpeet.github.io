@@ -10,6 +10,7 @@ class SideNavigation extends Component {
         <div id="project-filters">
           <ul>
             <Link to="/"><li>projects</li></Link>
+            <Link to="/portraits"><li>portraits</li></Link>
            
           </ul>
         </div>
