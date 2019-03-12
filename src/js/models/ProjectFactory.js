@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[4] = projectOne
+        this.projects[5] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[3] = projectTwo
+        this.projects[4] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -82,7 +82,7 @@ class ProjectFactory {
         projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/HipHop_900x1000.jpg"))
         
 
-        this.projects[2] = projectFour
+        this.projects[3] = projectFour
 
 
         // **** TV 2018 **** //
@@ -103,7 +103,7 @@ class ProjectFactory {
         projectFive.addImage(new ProjectImage("Best TV of 2018", "" , "./../src/img/TV-2018/TV-2018-composite_814x1000px.jpg"))
                 
 
-        this.projects[1] = projectFive
+        this.projects[2] = projectFive
 
 
                 // **** Trump **** //
@@ -114,7 +114,7 @@ class ProjectFactory {
         projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
-        this.projects[5] = projectSix
+        this.projects[6] = projectSix
 
 
                 // **** This is America **** //
@@ -128,7 +128,7 @@ class ProjectFactory {
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitC_1000x690px.jpg"))
                 
 
-        this.projects[6] = projectSeven
+        this.projects[9] = projectSeven
 
 
                 // **** Hannibals **** //
@@ -161,6 +161,29 @@ class ProjectFactory {
                 
 
         this.projects[8] = projectNine
+
+
+                // **** Oscars 2019 **** //
+
+        var projectTen = new Project()
+        projectTen.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Best Supporting Actor portraits" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-COMPOSITEv2_430x800px.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Best Supporting Actress portraits" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-COMPOSITEv2_540x1000px.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Best Actor Oscars portraits" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-COMPOSITE-v2_430x800.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Best Actress portraits" , "./../src/img/OSCARS2019/OSCARS2019-BestActress-COMPOSITEv2_540x1000px.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Sam Elliott, A Star is Born" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-SAMELLIOT_580x750px.jpg"))     
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Olivia Coleman, The Favourite" , "./../src/img/OSCARS2019/OSCARS2019-BestActress-OliviaColemanv2_730x1000px.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Emma Stone, The Favourite" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-EMMASTONE_600x800px.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Rachel Weiss, The Favourite" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-RACHELWEISS_580x800.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Viggo Mortensen, Green Book" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-ViggoMortensen_570x800px.jpg"))
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Richard E Grant, Can You Ever Forgive Me?" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-RICHARDEGRANT_640x800px.jpg")) 
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Melissa McCarthy, Can You Ever Forgive Me?" , "./../src/img/OSCARS2019/OSCARS2019-BestActress-MelissaMcCarthy_585x800px.jpg"))        
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Christian Bale, Vice" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-ChristianBale_825x1000px.jpg"))        
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Sam Rockwell, Vice" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-SAMROCKWELL_650800px.jpg"))        
+        projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Regina King, If Beale Street could Talk" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-REGINAKINGv2_555x800px.jpg"))        
+
+        this.projects[1] = projectTen
     }
 
     getArtistProjects() {
