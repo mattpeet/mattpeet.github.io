@@ -10,10 +10,17 @@ class ProjectImageCarousel extends Component {
 
       this.handleSelect = this.handleSelect.bind(this);
 
-      this.state = {
-        activeIndex: 0,
-        direction: null
-      };
+      if (props.activeIndex) {
+        this.state = {
+          activeIndex: parseInt(props.activeIndex),
+          direction: null
+        }
+      } else {
+        this.state = {
+          activeIndex: 0,
+          direction: null
+        }
+      }
     }
 
     handleSelect(selectedIndex, e) {
