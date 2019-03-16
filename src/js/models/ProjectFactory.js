@@ -235,8 +235,8 @@ class ProjectFactory {
         var projectFourteen = new Project()
         projectFourteen.setCategory(ProjectFactory.illustrationCategory.name)
         // projectFourteen.setSubCategory("portraiture")
-        projectFourteen.addImage(new ProjectImage("Viola Davis, Widows", "portrait, 2019" , "./../src/img/Widows/Widows-ViolaDavis_1_720x800px.jpg"))
-        projectFourteen.addImage(new ProjectImage("Viola Davis, Widows", "portrait, 2019" , "./../src/img/Widows/Widows-ViolaDavis_2_740x800px.jpg"))
+        projectFourteen.addImage(new ProjectImage("Viola Davis, Widows", "portrait, 2019" , "./../src/img/WIDOWS/Widows-ViolaDavis_1_720x800px.jpg"))
+        projectFourteen.addImage(new ProjectImage("Viola Davis, Widows", "portrait, 2019" , "./../src/img/WIDOWS/Widows-ViolaDavis_2_740x800px.jpg"))
         
        
                 
