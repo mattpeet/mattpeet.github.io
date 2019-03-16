@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[5] = projectOne
+        this.projects[9] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[4] = projectTwo
+        this.projects[8] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -70,7 +70,7 @@ class ProjectFactory {
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh speaker portraits 2018", "" , "./../src/img/CMEdi2018/CMEdi2018-COMPOSITE_1-1000x750px.jpg"))
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh speaker portraits 2018", "" , "./../src/img/CMEdi2018/CMEdi2018-COMPOSITE_2-1000x750px.jpg"))
 
-        this.projects[0] = projectThree
+        this.projects[2] = projectThree
 
 
         // **** Podcasters **** //
@@ -82,7 +82,7 @@ class ProjectFactory {
         projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/HipHop_900x1000.jpg"))
         
 
-        this.projects[3] = projectFour
+        this.projects[11] = projectFour
 
 
         // **** TV 2018 **** //
@@ -103,7 +103,7 @@ class ProjectFactory {
         projectFive.addImage(new ProjectImage("Best TV of 2018", "" , "./../src/img/TV-2018/TV-2018-composite_814x1000px.jpg"))
                 
 
-        this.projects[2] = projectFive
+        this.projects[4] = projectFive
 
 
                 // **** Trump **** //
@@ -114,7 +114,7 @@ class ProjectFactory {
         projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
-        this.projects[6] = projectSix
+        this.projects[10] = projectSix
 
 
                 // **** This is America **** //
@@ -128,7 +128,7 @@ class ProjectFactory {
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitC_1000x690px.jpg"))
                 
 
-        this.projects[9] = projectSeven
+        this.projects[13] = projectSeven
 
 
                 // **** Hannibals **** //
@@ -143,7 +143,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[7] = projectEight
+        this.projects[12] = projectEight
 
 
                 // **** Vegans **** //
@@ -160,7 +160,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[8] = projectNine
+        // this.projects[8] = projectNine
 
 
                 // **** Oscars 2019 **** //
@@ -183,7 +183,65 @@ class ProjectFactory {
         projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Sam Rockwell, Vice" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-SAMROCKWELL_650800px.jpg"))        
         projectTen.addImage(new ProjectImage("Oscar Nominees 2019", "Regina King, If Beale Street could Talk" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-REGINAKINGv2_555x800px.jpg"))        
 
-        this.projects[1] = projectTen
+        this.projects[3] = projectTen
+
+
+                // **** Tove Jansson **** //
+
+        var projectEleven = new Project()
+        projectEleven.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectEleven.setSubCategory("portraiture")
+        projectEleven.addImage(new ProjectImage("Tove Jansson", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-TOVEJANSSON_615x800px.jpg"))
+        
+       
+                
+
+        this.projects[5] = projectEleven
+
+
+                // **** Carl Sagan **** //
+
+        var projectTwelve = new Project()
+        projectTwelve.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectTwelve.setSubCategory("portraiture")
+        projectTwelve.addImage(new ProjectImage("Carl Sagan", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-CARLSAGAN_605x800px.jpg"))
+        
+       
+                
+
+        this.projects[6] = projectTwelve
+
+
+                // **** Sharon Van Etten **** //
+
+        var projectThirteen = new Project()
+        projectThirteen.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectThirteen.setSubCategory("portraiture")
+        projectThirteen.addImage(new ProjectImage("Sharon Van Etten", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SHARONVANETTEN-composite_665x800px.jpg"))
+        projectThirteen.addImage(new ProjectImage("Sharon Van Etten", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SHARONVANETTEN-A_665x800px.jpg"))
+        projectThirteen.addImage(new ProjectImage("Sharon Van Etten", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SHARONVANETTEN-B_665x800px.jpg"))
+        projectThirteen.addImage(new ProjectImage("Sharon Van Etten", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SHARONVANETTEN-C_665x800px.jpg"))
+        projectThirteen.addImage(new ProjectImage("Sharon Van Etten", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SHARONVANETTEN-D_665x800px.jpg"))
+        
+       
+                
+
+        this.projects[1] = projectThirteen
+
+
+                        // **** Widows **** //
+
+        var projectFourteen = new Project()
+        projectFourteen.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectFourteen.setSubCategory("portraiture")
+        projectFourteen.addImage(new ProjectImage("Viola Davis, Widows", "portrait, 2019" , "./../src/img/Widows/Widows-ViolaDavis_1_720x800px.jpg"))
+        projectFourteen.addImage(new ProjectImage("Viola Davis, Widows", "portrait, 2019" , "./../src/img/Widows/Widows-ViolaDavis_2_740x800px.jpg"))
+        
+       
+                
+
+        this.projects[7] = projectFourteen
+
     }
 
     getArtistProjects() {
