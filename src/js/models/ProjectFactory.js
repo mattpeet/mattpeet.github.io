@@ -160,7 +160,7 @@ class ProjectFactory {
         projectNine.addImage(new ProjectImage("Vegan mock up", "(text: BBC News)", "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg"))
        
 
-        this.projects[8] = projectNine
+        // this.projects[] = projectNine
 
                 // **** Oscars 2019 **** //
 
@@ -191,9 +191,35 @@ class ProjectFactory {
     setupPortraits() {
         this.portraits = []
 
-        this.portraits[0] = new ProjectImage("Vegan mock up", "(text: BBC News)", "./../src/img/VEGANISM/Vegans-mock-up_1000x785px.jpg")
-        this.portraits[1] = new ProjectImage("Hannibal", "Mads Mikkelsen" , "./../src/img/HANNIBALS/Hannibal-portraitC_745x1000px.jpg")
-    }
+        this.portraits[0] = new ProjectImage("Sam Elliott, A Star is Born", "2019" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-SAMELLIOT_580x750px.jpg")
+        this.portraits[1] = new ProjectImage("Olivia Coleman, The Favourite", "2019" , "./../src/img/OSCARS2019/OSCARS2019-BestActress-OliviaColemanv2_730x1000px.jpg")
+        this.portraits[2] = new ProjectImage("Emma Stone, The Favourite", "2019" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-EMMASTONE_600x800px.jpg")
+        this.portraits[3] = new ProjectImage("Rachel Weiss, The Favourite", "2019" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-RACHELWEISS_580x800.jpg")
+        this.portraits[4] = new ProjectImage("Regina King, If Beale Street could Talk", "2019" , "./../src/img/OSCARS2019/OSCARS2019-SuppActress-REGINAKINGv2_555x800px.jpg")
+        this.portraits[5] = new ProjectImage("Viola Davis, Widows", "2018" , "./../src/img/WIDOWS/Widows-ViolaDavis_1_720x800px.jpg")
+        this.portraits[6] = new ProjectImage("Viola Davis, Widows", "2018" , "./../src/img/WIDOWS/Widows-ViolaDavis_2_740x800px.jpg")
+        this.portraits[7] = new ProjectImage("Adam Buxton", "2018" , "./../src/img/PODCASTERS/Buxton_880x1000px.jpg")
+        this.portraits[8] = new ProjectImage("Romesh Ranganathan", "2018" , "./../src/img/PODCASTERS/HipHop_900x1000.jpg")
+        this.portraits[9] = new ProjectImage("Viggo Mortensen, Green Book" , "2019" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-ViggoMortensen_570x800px.jpg")
+        this.portraits[10] = new ProjectImage("Richard E Grant, Can You Ever Forgive Me?" , "2019" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-RICHARDEGRANT_640x800px.jpg")
+        this.portraits[11] = new ProjectImage("Melissa McCarthy, Can You Ever Forgive Me?" , "2019" , "./../src/img/OSCARS2019/OSCARS2019-BestActress-MelissaMcCarthy_585x800px.jpg")       
+        this.portraits[12] = new ProjectImage("Christian Bale, Vice" , "2019" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-ChristianBale_825x1000px.jpg")        
+        this.portraits[13] = new ProjectImage("Sam Rockwell, Vice" , "2019" , "./../src/img/OSCARS2019/OSCARS2019-SuppActor-SAMROCKWELL_650800px.jpg") 
+        this.portraits[14] = new ProjectImage("Rami Malek, Bohemian Rhapsody" , "2019" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-RamiMalek_550x800px.jpg") 
+        this.portraits[15] = new ProjectImage("Tove Jansson" , "2019" , "./../src/img/PORTRAITCHALLENGE_2019/Portrait-Challenge-TOVEJANSSON_615x800px.jpg") 
+        this.portraits[16] = new ProjectImage("Carl Sagan" , "2019" , "./../src/img/PORTRAITCHALLENGE_2019/Portrait-Challenge-CARLSAGAN_605x800px.jpg") 
+        this.portraits[17] = new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitA_885x1000px.jpg")
+        this.portraits[18] = new ProjectImage("Michaela Coel, Black Earth Rising" ,"2019" ,  "./../src/img/TV-2018/TV-2018-BLACKEARTHRISING_945x1000px.jpg")
+        this.portraits[19] = new ProjectImage("Richard Madden, Bodyguard" ,"2019" ,  "./../src/img/TV-2018/TV-2018-BODYGUARD_890x1000px.jpg")
+        this.portraits[20] = new ProjectImage("Brian Tyree Henry, Atlanta" , "2019" , "./../src/img/TV-2018/TV-2018-ATLANTA_1000x1000px.jpg")
+        this.portraits[21] = new ProjectImage("Benedict Cumberbatch, Patrick Melrose" , "2019" , "./../src/img/TV-2018/TV-2018-PATRICKMELROSE_915x1000px.jpg")
+        this.portraits[22] = new ProjectImage("Hugh Grant, A Very English Scandal" , "2019" , "./../src/img/TV-2018/TV-2018-ENGLISHSCANDAL_940x1000px.jpg")
+        this.portraits[23] = new ProjectImage("Amy Adams, Sharp Objects" , "2019" , "./../src/img/TV-2018/TV-2018-SHARPOBJECTS_1000x1000px.jpg")
+        this.portraits[24] = new ProjectImage("Christine Baranski, The Good Fight" , "2019" , "./../src/img/TV-2018/TV-2018-GOODFIGHT_970x1000px.jpg")
+        this.portraits[25] = new ProjectImage("Brian Cox, Succession" , "2019" , "./../src/img/TV-2018/TV-2018-SUCCESSION_1000x1000px.jpg")
+
+
+        }
 
     getArtistProjects() {
         return this.projects
