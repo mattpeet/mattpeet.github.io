@@ -205,6 +205,7 @@ class ProjectFactory {
         projectTwelve.setCategory(ProjectFactory.illustrationCategory.name)
         // projectTwelve.setSubCategory("portraiture")
         projectTwelve.addImage(new ProjectImage("Carl Sagan", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-CARLSAGAN_605x800px.jpg"))
+        projectTwelve.addImage(new ProjectImage("Carl Sagan", "alternate version, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-CARLSAGAN(TEXT)_605x800px.jpg"))
         
        
                 
