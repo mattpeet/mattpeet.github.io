@@ -266,7 +266,8 @@ class ProjectFactory {
         projectsixteen.setCategory(ProjectFactory.illustrationCategory.name)
         // projectsixteen.setSubCategory("portraiture")
         projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-B_800x775px.jpg"))
-        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS_1x2-465x1000px.jpg"))
+        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A.gif"))
+        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A_770x800px.jpg"))
 
        
                 
