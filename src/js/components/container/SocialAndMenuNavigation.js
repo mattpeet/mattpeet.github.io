@@ -7,33 +7,15 @@ class SocialAndMenuNavigation extends Component {
   constructor(props) {
     super(props);
     this.artist = new ArtistDetails()
-    this.state = {
-      menuOpen: this.props.menuOpen
-    };
-    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  // Menu Handlers
-
   getMenuIcon() {
-    if (this.state.menuOpen) {
+    if (this.props.menuOpen) {
       return "fa-times";
     } else {
       return "fa-bars";
     }
   }
-
-  toggleMenu() {
-    this.setState((prevState) => {
-      prevState.menuOpen = !prevState.menuOpen
-      return prevState
-    })
-    // tell the parent App to show the menu overlay
-    this.props.openMenuCommand()
-  }
-
-
-
 
   render() {
     return(
@@ -46,7 +28,7 @@ class SocialAndMenuNavigation extends Component {
           <a href={'mailto:' + this.artist.email.linkUrl}><i className="fas fa-envelope"></i></a>
         </div>
         <div className="nav-end">
-          <i id="hamburger-menu" className={'fas ' + this.getMenuIcon()} onClick={this.toggleMenu}></i>
+          <i id="hamburger-menu" className={'fas ' + this.getMenuIcon()} onClick={this.props.openMenuCommand}></i>
         </div>
       </div>
       )

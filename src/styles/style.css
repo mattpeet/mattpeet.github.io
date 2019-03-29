@@ -124,7 +124,8 @@ a i {
 
 #hamburger-menu {
   float: right;
-  padding-right: 15px;
+  padding-right: 0px;
+  color: black;
 }
 
 #illustrator-name {
@@ -179,6 +180,26 @@ ul ul li {
 
 #copyright-notice {
   display: none;
+}
+
+#menu-overlay {
+  width: 50%;
+  height: 100%;
+  background: gray;
+  position: absolute;
+  margin-left: -15px;
+}
+
+@media(min-width: 824px) and (orientation: landscape) {
+  #menu-overlay {
+    visibility: hidden;
+  }
+}
+
+@media(min-width: 1024px) {
+  #menu-overlay {
+    visibility: hidden;
+  }
 }
 
 @media(min-width: 824px) and (orientation: landscape) {
