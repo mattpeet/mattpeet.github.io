@@ -15,7 +15,9 @@ a:hover {
   color: gray;
 }
 
-
+.container {
+  width: unset;
+}
 
 #app-container {
   padding: 0;
@@ -183,7 +185,7 @@ ul ul li {
 }
 
 #menu-overlay {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   background: white;
   opacity: 0.9;
@@ -240,6 +242,7 @@ ul ul li {
 }
 
 .main-project-grid {
+  position: relative;
   padding-bottom: 50px;
 }
 
