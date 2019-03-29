@@ -37,7 +37,7 @@ class ProjectDetailContainer extends Component {
   render() {
     return (
       <div className="main-project-grid">
-      <MenuOverlay overlayVisible={this.props.menuOpen} />
+      <MenuOverlay overlayVisible={this.props.menuOpen} toggleMenu={this.props.toggleMenu}  />
         <ToggleableCaptionContainer activeProject={this.state.activeProject} handleImageSelect={this.handleImageSelect} selectedImage={this.state.selectedImage} onCaptionToggleClick={this.onCaptionToggleClick} captionVisible={this.state.captionVisible} />
         <NoToggleCaptionContainer activeProject={this.state.activeProject} handleImageSelect={this.handleImageSelect} selectedImage={this.state.selectedImage} />
         

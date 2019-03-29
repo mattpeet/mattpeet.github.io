@@ -16,7 +16,7 @@ class ContactContainer extends Component {
     })
     return (
       <div className="contact-container">
-        <MenuOverlay overlayVisible={this.props.menuOpen} />
+        <MenuOverlay overlayVisible={this.props.menuOpen} toggleMenu={this.props.toggleMenu} />
         <div className="contact-rows">
           {rows}
         </div>

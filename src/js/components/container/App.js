@@ -33,7 +33,7 @@ class App extends Component {
       <div className="app-container">
         <Header />
         <Navigation menuOpen={this.state.menuOpen} openMenuCommand={this.toggleMenu} />
-        <Main menuOpen={this.state.menuOpen} />
+        <Main menuOpen={this.state.menuOpen} toggleMenu={this.toggleMenu} />
       </div>
     );
   }
@@ -44,12 +44,12 @@ class Main extends Component {
   render () {
     return (
     <Switch>
-      <Route exact path='/' render={(props) => <ProjectMainGrid {... props} menuOpen={this.props.menuOpen} />} />
+      <Route exact path='/' render={(props) => <ProjectMainGrid {... props} menuOpen={this.props.menuOpen} toggleMenu={this.props.toggleMenu} />} />
       <Route path='/category/:categoryId/:subcategoryId' component={ProjectMainGrid} />
       <Route path='/category/:categoryId' component={ProjectMainGrid}  />
-      <Route path="/about" render={(props) => <AboutContainer {... props} menuOpen={this.props.menuOpen}/>} />
-      <Route path="/contact" render={(props) => <ContactContainer {... props} menuOpen={this.props.menuOpen}/>} />
-      <Route path='/:projectId' render={(props) => <ProjectDetailContainer {... props} menuOpen={this.props.menuOpen} />} />
+      <Route path="/about" render={(props) => <AboutContainer {... props} menuOpen={this.props.menuOpen} toggleMenu={this.props.toggleMenu} />} />
+      <Route path="/contact" render={(props) => <ContactContainer {... props} menuOpen={this.props.menuOpen} toggleMenu={this.props.toggleMenu} />} />
+      <Route path='/:projectId' render={(props) => <ProjectDetailContainer {... props} menuOpen={this.props.menuOpen} toggleMenu={this.props.toggleMenu}  />} />
     </Switch>
     )
   }

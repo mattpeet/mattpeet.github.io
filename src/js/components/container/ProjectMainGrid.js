@@ -32,7 +32,7 @@ class ProjectMainGrid extends Component {
     return (
       <div className="main-project-grid" id="overview-grid">
         {thumbs}
-        <MenuOverlay overlayVisible={this.props.menuOpen} />
+        <MenuOverlay overlayVisible={this.props.menuOpen} toggleMenu={this.props.toggleMenu} />
       </div>
       )
   }

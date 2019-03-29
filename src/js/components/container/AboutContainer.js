@@ -10,7 +10,7 @@ class AboutContainer extends Component {
 
     return(
       <div className="about-container">
-        <MenuOverlay overlayVisible={this.props.menuOpen} />
+        <MenuOverlay overlayVisible={this.props.menuOpen} toggleMenu={this.props.toggleMenu} />
         <p>{artistDesc}</p>
       </div>
       )
