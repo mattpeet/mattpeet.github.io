@@ -8,6 +8,7 @@ class ProjectDetailContainer extends Component {
 
   constructor(props) {
     super(props)
+    console.log("******* nav to")
     var factory = new ProjectFactory()
     var projects = factory.getArtistProjects()
     var activeProjectIndex = props.match.params.projectId

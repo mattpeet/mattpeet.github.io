@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { Link } from 'react-router-dom'
 
 class MenuOverlay extends Component {
 
@@ -19,7 +20,20 @@ class MenuOverlay extends Component {
   render() {
     return (
       <div id="menu-overlay" style={this.getStyle()}>
-        
+        <div className="menu-inner">
+        <div id="project-filters">
+          <ul>
+            <Link to="/"><li>projects</li></Link>
+           
+          </ul>
+        </div>
+        <div id="sundry-nav">
+          <ul>
+          <Link to="/about"><li>about</li></Link>
+          <Link to="/contact"><li>contact</li></Link>
+          </ul>
+        </div>
+        </div>
       </div>
       )
   }
