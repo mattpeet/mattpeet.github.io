@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import ProjectFactory from "../../models/ProjectFactory.js"
 import ToggleableCaptionContainer from "../presentational/ToggleableCaptionContainer.js"
 import NoToggleCaptionContainer from "../presentational/NoToggleCaptionContainer.js"
+import MenuOverlay from "./MenuOverlay.js"
 
 class ProjectDetailContainer extends Component {
 
@@ -36,8 +37,10 @@ class ProjectDetailContainer extends Component {
   render() {
     return (
       <div className="main-project-grid">
+      <MenuOverlay overlayVisible={this.props.menuOpen} />
         <ToggleableCaptionContainer activeProject={this.state.activeProject} handleImageSelect={this.handleImageSelect} selectedImage={this.state.selectedImage} onCaptionToggleClick={this.onCaptionToggleClick} captionVisible={this.state.captionVisible} />
         <NoToggleCaptionContainer activeProject={this.state.activeProject} handleImageSelect={this.handleImageSelect} selectedImage={this.state.selectedImage} />
+        
       </div>
 
       )

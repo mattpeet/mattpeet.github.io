@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ArtistDetails from "../../models/ArtistDetails.js"
+import MenuOverlay from "./MenuOverlay.js"
 
 class AboutContainer extends Component {
 
@@ -9,6 +10,7 @@ class AboutContainer extends Component {
 
     return(
       <div className="about-container">
+        <MenuOverlay overlayVisible={this.props.menuOpen} />
         <p>{artistDesc}</p>
       </div>
       )

@@ -47,9 +47,9 @@ class Main extends Component {
       <Route exact path='/' render={(props) => <ProjectMainGrid {... props} menuOpen={this.props.menuOpen} />} />
       <Route path='/category/:categoryId/:subcategoryId' component={ProjectMainGrid} />
       <Route path='/category/:categoryId' component={ProjectMainGrid}  />
-      <Route path="/about" component={AboutContainer} />
-      <Route path="/contact" component={ContactContainer} />
-      <Route path='/:projectId' component={ProjectDetailContainer} />
+      <Route path="/about" render={(props) => <AboutContainer {... props} menuOpen={this.props.menuOpen}/>} />
+      <Route path="/contact" render={(props) => <ContactContainer {... props} menuOpen={this.props.menuOpen}/>} />
+      <Route path='/:projectId' render={(props) => <ProjectDetailContainer {... props} menuOpen={this.props.menuOpen} />} />
     </Switch>
     )
   }

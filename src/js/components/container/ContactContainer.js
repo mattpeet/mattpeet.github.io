@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import ArtistDetails from "../../models/ArtistDetails.js"
 import ContactDetailRow from "../presentational/ContactDetailRow.js"
+import MenuOverlay from "./MenuOverlay.js"
 
 class ContactContainer extends Component {
 
@@ -15,7 +16,10 @@ class ContactContainer extends Component {
     })
     return (
       <div className="contact-container">
-        {rows}
+        <MenuOverlay overlayVisible={this.props.menuOpen} />
+        <div className="contact-rows">
+          {rows}
+        </div>
       </div>
       )
   }

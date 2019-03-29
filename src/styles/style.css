@@ -189,6 +189,7 @@ ul ul li {
   opacity: 0.9;
   position: absolute;
   margin-left: -15px;
+  z-index: 1;
 }
 
 .menu-inner {
@@ -532,9 +533,9 @@ ul ul li {
 
 /* About */
 
-.about-container {
-  margin-top: 50px;
-  margin-left: 20px;
+.about-container p {
+  padding-top: 50px;
+  padding-left: 20px;
   margin-right: 20px;
 }
 
@@ -548,7 +549,7 @@ ul ul li {
 
 /* Contact */
 
-.contact-container {
+.contact-rows {
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
