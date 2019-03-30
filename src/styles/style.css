@@ -206,6 +206,12 @@ ul ul li {
   color: white;
 }
 
+.closeable-inner-menu {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+
 @media(min-width: 824px) and (orientation: landscape) {
   #menu-overlay {
     visibility: hidden;
