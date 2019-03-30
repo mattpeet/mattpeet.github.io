@@ -8,20 +8,39 @@ class MenuOverlay extends Component {
     super(props)
     this.getStyle = this.getStyle.bind(this)
     this.closeMenu = this.closeMenu.bind(this)
+    this.handleResize = this.handleResize.bind(this)
+    this.state = {
+      windowWidth: window.innerWidth ||  document.documentElement.clientWidth || document.body.clientWidth
+    }
   }
 
   getStyle() {
-    if (this.props.overlayVisible) {
+    if (this.props.overlayVisible && this.state.windowWidth < 824) {
       return {visibility: "visible"}
     } else {
       return {visibility: "hidden" }
     }
   }
 
+  componentDidMount() {
+    window.addEventListener('resize', this.handleResize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  }
+
+  handleResize() {
+    if (window.innerWidth > 824 && this.props.overlayVisible) {
+      this.props.toggleMenu()
+    }
+    this.setState({windowWidth: window.innerWidth})
+  }
+
   closeMenu() {
-    console.log("close")
     this.props.toggleMenu()
   }
+
   render() {
     return (
       <div id="menu-overlay" style={this.getStyle()}>
