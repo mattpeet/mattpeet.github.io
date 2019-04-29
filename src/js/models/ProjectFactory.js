@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[11] = projectOne
+        this.projects[12] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[10] = projectTwo
+        this.projects[11] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -82,7 +82,7 @@ class ProjectFactory {
         projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/HipHop_900x1000.jpg"))
         
 
-        this.projects[13] = projectFour
+        this.projects[14] = projectFour
 
 
         // **** TV 2018 **** //
@@ -103,7 +103,7 @@ class ProjectFactory {
         projectFive.addImage(new ProjectImage("Best TV of 2018", "" , "./../src/img/TV-2018/TV-2018-composite_814x1000px.jpg"))
                 
 
-        this.projects[4] = projectFive
+        this.projects[5] = projectFive
 
 
                 // **** Trump **** //
@@ -114,7 +114,7 @@ class ProjectFactory {
         projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
-        this.projects[12] = projectSix
+        this.projects[13] = projectSix
 
 
                 // **** This is America **** //
@@ -128,7 +128,7 @@ class ProjectFactory {
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitC_1000x690px.jpg"))
                 
 
-        this.projects[15] = projectSeven
+        this.projects[16] = projectSeven
 
 
                 // **** Hannibals **** //
@@ -143,7 +143,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[14] = projectEight
+        this.projects[15] = projectEight
 
 
                 // **** Vegans **** //
@@ -196,7 +196,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[5] = projectEleven
+        this.projects[6] = projectEleven
 
 
                 // **** Carl Sagan **** //
@@ -210,7 +210,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[6] = projectTwelve
+        this.projects[7] = projectTwelve
 
 
                 // **** Sharon Van Etten **** //
@@ -241,7 +241,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[8] = projectFourteen
+        this.projects[9] = projectFourteen
 
 
                         // **** Arundhati Roy **** //
@@ -255,7 +255,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[9] = projectFifteen
+        this.projects[10] = projectFifteen
 
 
 
@@ -266,13 +266,29 @@ class ProjectFactory {
         projectsixteen.setCategory(ProjectFactory.illustrationCategory.name)
         // projectsixteen.setSubCategory("portraiture")
         projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-B_800x775px.jpg"))
-        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A.gif"))
+        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A.jpg"))
         projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A_770x800px.jpg"))
 
        
                 
 
-        this.projects[7] = projectsixteen
+        this.projects[8] = projectsixteen
+
+
+
+                                // **** GitPrime **** //
+
+        var projectseventeen = new Project()
+        projectseventeen.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectseventeen.setSubCategory("portraiture")
+        projectseventeen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/GITPRIME/GitPrime-RandyShoup_LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/GITPRIME/GitPrime-JPBuritica_v2-LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/GITPRIME/GitPrime-KimberLockhart_LoRes.jpg"))
+
+       
+                
+
+        this.projects[4] = projectseventeen
     }
 
     getArtistProjects() {
