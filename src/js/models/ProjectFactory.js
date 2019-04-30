@@ -281,9 +281,9 @@ class ProjectFactory {
         var projectseventeen = new Project()
         projectseventeen.setCategory(ProjectFactory.illustrationCategory.name)
         // projectseventeen.setSubCategory("portraiture")
-        projectseventeen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/GITPRIME/GitPrime-RandyShoup_LoRes.jpg"))
-        projectseventeen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/GITPRIME/GitPrime-JPBuritica_v2-LoRes.jpg"))
-        projectseventeen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/GITPRIME/GitPrime-KimberLockhart_LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Randy Shoup portrait, 2019" , "./../src/img/GITPRIME/GitPrime-RandyShoup_LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Juan Pablo Buritica portrait, 2019" , "./../src/img/GITPRIME/GitPrime-JPBuritica_v2-LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Kimber Lockhart portrait, 2019" , "./../src/img/GITPRIME/GitPrime-KimberLockhart_LoRes.jpg"))
 
        
                 
