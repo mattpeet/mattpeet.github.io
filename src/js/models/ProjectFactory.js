@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[12] = projectOne
+        this.projects[13] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[11] = projectTwo
+        this.projects[12] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -103,7 +103,7 @@ class ProjectFactory {
         projectFive.addImage(new ProjectImage("Best TV of 2018", "" , "./../src/img/TV-2018/TV-2018-composite_814x1000px.jpg"))
                 
 
-        this.projects[5] = projectFive
+        this.projects[6] = projectFive
 
 
                 // **** Trump **** //
@@ -114,7 +114,7 @@ class ProjectFactory {
         projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
-        this.projects[13] = projectSix
+        this.projects[14] = projectSix
 
 
                 // **** This is America **** //
@@ -143,7 +143,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[15] = projectEight
+       // this.projects[15] = projectEight
 
 
                 // **** Vegans **** //
@@ -196,7 +196,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[6] = projectEleven
+        this.projects[7] = projectEleven
 
 
                 // **** Carl Sagan **** //
@@ -210,7 +210,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[7] = projectTwelve
+        this.projects[8] = projectTwelve
 
 
                 // **** Sharon Van Etten **** //
@@ -241,7 +241,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[9] = projectFourteen
+        this.projects[10] = projectFourteen
 
 
                         // **** Arundhati Roy **** //
@@ -255,7 +255,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[10] = projectFifteen
+        this.projects[11] = projectFifteen
 
 
 
@@ -272,7 +272,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[8] = projectsixteen
+        this.projects[9] = projectsixteen
 
 
 
@@ -284,11 +284,29 @@ class ProjectFactory {
         projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Randy Shoup portrait, 2019" , "./../src/img/GITPRIME/GitPrime-RandyShoup_LoRes.jpg"))
         projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Juan Pablo Buritica portrait, 2019" , "./../src/img/GITPRIME/GitPrime-JPBuritica_v2-LoRes.jpg"))
         projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Kimber Lockhart portrait, 2019" , "./../src/img/GITPRIME/GitPrime-KimberLockhart_LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Alex Grosse portrait, 2019" , "./../src/img/GITPRIME/GitPrime-AlexGrosse_LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Paulo Andre portrait, 2019" , "./../src/img/GITPRIME/GitPrime-PauloAndre_LoRes.jpg"))
+        projectseventeen.addImage(new ProjectImage("Blog illustrations, GitPrime Inc", "Douglas Ferguson portrait, 2019" , "./../src/img/GITPRIME/GitPrime-DouglasFerguson_LoRes.jpg"))
 
        
                 
 
         this.projects[4] = projectseventeen
+
+
+
+                        // **** Big Issue Heavens **** //
+
+        var projectEighteen = new Project()
+        projectEighteen.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectFifteen.setSubCategory("portraiture")
+        projectEighteen.addImage(new ProjectImage("for Big Issue, May 2019", "The Heavens by Sandra Newman" , "./../src/img/BIG-ISSUE-HEAVENS/BigIssueHeavens-600x800.jpg"))
+        projectEighteen.addImage(new ProjectImage("for Big Issue, May 2019", "The Heavens by Sandra Newman" , "./../src/img/BIG-ISSUE-HEAVENS/BigIssueHeavens-scan_543x800.jpg"))
+
+       
+                
+
+        this.projects[5] = projectEighteen
     }
 
     getArtistProjects() {
