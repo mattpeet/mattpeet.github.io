@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[16] = projectOne
+        this.projects[17] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[14] = projectTwo
+        this.projects[15] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -70,7 +70,7 @@ class ProjectFactory {
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh speaker portraits 2018", "" , "./../src/img/CMEdi2018/CMEdi2018-COMPOSITE_1-1000x750px.jpg"))
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh speaker portraits 2018", "" , "./../src/img/CMEdi2018/CMEdi2018-COMPOSITE_2-1000x750px.jpg"))
 
-        this.projects[8] = projectThree
+        this.projects[9] = projectThree
 
 
         // **** Podcasters **** //
@@ -82,7 +82,7 @@ class ProjectFactory {
         projectFour.addImage(new ProjectImage("Romesh Ranganathan", "Hip-hop Saved my Life" , "./../src/img/PODCASTERS/HipHop_900x1000.jpg"))
         
 
-        this.projects[19] = projectFour
+        this.projects[20] = projectFour
 
 
         // **** TV 2018 **** //
@@ -103,7 +103,7 @@ class ProjectFactory {
         projectFive.addImage(new ProjectImage("Best TV of 2018", "" , "./../src/img/TV-2018/TV-2018-composite_814x1000px.jpg"))
                 
 
-        this.projects[12] = projectFive
+        this.projects[13] = projectFive
 
 
                 // **** Trump **** //
@@ -114,7 +114,7 @@ class ProjectFactory {
         projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
-        this.projects[17] = projectSix
+        this.projects[18] = projectSix
 
 
                 // **** This is America **** //
@@ -128,7 +128,7 @@ class ProjectFactory {
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitC_1000x690px.jpg"))
                 
 
-        this.projects[18] = projectSeven
+        this.projects[19] = projectSeven
 
 
                 // **** Hannibals **** //
@@ -196,7 +196,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[9] = projectEleven
+        this.projects[10] = projectEleven
 
 
                 // **** Carl Sagan **** //
@@ -210,7 +210,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[13] = projectTwelve
+        this.projects[14] = projectTwelve
 
 
                 // **** Sharon Van Etten **** //
@@ -241,7 +241,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[10] = projectFourteen
+        this.projects[11] = projectFourteen
 
 
                         // **** Arundhati Roy **** //
@@ -255,7 +255,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[15] = projectFifteen
+        this.projects[16] = projectFifteen
 
 
 
@@ -272,7 +272,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[11] = projectsixteen
+        this.projects[12] = projectsixteen
 
 
 
@@ -291,7 +291,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[6] = projectseventeen
+        this.projects[7] = projectseventeen
 
 
 
@@ -305,7 +305,7 @@ class ProjectFactory {
         projectEighteen.addImage(new ProjectImage("for Big Issue, May 2019", "The Heavens by Sandra Newman" , "./../src/img/BIG-ISSUE-HEAVENS/BigIssueHeavens-600x800.jpg"))
         projectEighteen.addImage(new ProjectImage("for Big Issue, May 2019", "The Heavens by Sandra Newman" , "./../src/img/BIG-ISSUE-HEAVENS/BigIssueHeavens-scan_543x800.jpg"))
 
-        this.projects[5] = projectEighteen
+        this.projects[6] = projectEighteen
 
 
 
@@ -358,7 +358,24 @@ class ProjectFactory {
         projectTwentytwo.addImage(new ProjectImage("Oscar Nominees 2019", "Christian Bale, Vice" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-ChristianBale_825x1000px.jpg"))        
  
 
-        this.projects[7] = projectTwentytwo
+        this.projects[8] = projectTwentytwo
+
+
+
+
+                                      // **** GitPrime October 2019 **** //
+
+        var projectTwentythree = new Project()
+        projectTwentythree.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+       
+        projectTwentythree.addImage(new ProjectImage("Portrait for GitPrime.Inc", "Julie Zhuo, Facebook" , "./../src/img/GITPRIME/GitPrime-Julie-Zhou_LowRes.jpg"))        
+        projectTwentythree.addImage(new ProjectImage("blog.gitprime.com", "Julie Zhuo, Facebook" , "./../src/img/GITPRIME/GitPrime-JulieZhuoScreenshot1.jpg"))        
+        projectTwentythree.addImage(new ProjectImage("blog.gitprime.com", "Julie Zhuo, Facebook" , "./../src/img/GITPRIME/GitPrime-JulieZhuoScreenshot2.jpg"))        
+        projectTwentythree.addImage(new ProjectImage("Portrait for GitPrime.Inc", "Nassim Kammah, Mailchimp" , "./../src/img/GITPRIME/GitPrime-NassimKammah_lowRes.jpg"))
+        projectTwentythree.addImage(new ProjectImage("Portrait for GitPrime.Inc", "Dan Purpius, Range" , "./../src/img/GITPRIME/GitPrime-DanPurpius_LowRes.jpg"))
+
+        this.projects[5] = projectTwentythree
 
     }
 
