@@ -39,7 +39,7 @@ class ProjectFactory {
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "illustration for BBC History Magazine", "./../src/img/BBCMERMAID/BBCHistoryMermaid-IMAGE-1000x812px.jpg"))
         projectOne.addImage(new ProjectImage("The Mermaid and Mrs Hancock", "", "./../src/img/BBCMERMAID/BBCHistoryMermaid-MOCKUP-573x750px.jpg"))
 
-        this.projects[17] = projectOne
+        this.projects[25] = projectOne
 
         // **** KEEPER Oct2018 **** //
         var projectTwo = new Project()
@@ -49,7 +49,7 @@ class ProjectFactory {
         projectTwo.addImage(new ProjectImage("Drop-in image,The Keeper magazine", "", "./../src/img/KEEPER-OCT18/Keeper-Oct18-DROPIN-564x500px.jpg"))
         projectTwo.addImage(new ProjectImage("The Keeper magazine", "Winter 2018", "./../src/img/KEEPER-OCT18/Keeper-Oct18-Page1-750x1000px.jpg"))
 
-        this.projects[15] = projectTwo
+        this.projects[26] = projectTwo
 
 
         // **** CMEdi 2018 **** //
@@ -70,7 +70,7 @@ class ProjectFactory {
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh speaker portraits 2018", "" , "./../src/img/CMEdi2018/CMEdi2018-COMPOSITE_1-1000x750px.jpg"))
         projectThree.addImage(new ProjectImage("CreativeMornings Edinburgh speaker portraits 2018", "" , "./../src/img/CMEdi2018/CMEdi2018-COMPOSITE_2-1000x750px.jpg"))
 
-        this.projects[9] = projectThree
+        this.projects[15] = projectThree
 
 
         // **** Podcasters **** //
@@ -103,7 +103,7 @@ class ProjectFactory {
         projectFive.addImage(new ProjectImage("Best TV of 2018", "" , "./../src/img/TV-2018/TV-2018-composite_814x1000px.jpg"))
                 
 
-        this.projects[13] = projectFive
+        //this.projects[] = projectFive
 
 
                 // **** Trump **** //
@@ -114,7 +114,7 @@ class ProjectFactory {
         projectSix.addImage(new ProjectImage("Donald Trump", "portrait, 2018" , "./../src/img/TRUMP/TRUMPportrait_890x1000px.jpg"))
                 
 
-        this.projects[18] = projectSix
+        this.projects[27] = projectSix
 
 
                 // **** This is America **** //
@@ -128,7 +128,7 @@ class ProjectFactory {
         projectSeven.addImage(new ProjectImage("Donald Glover, This is America", "" , "./../src/img/THIS-IS-AMERICA/ThisIsAmerica-PortraitC_1000x690px.jpg"))
                 
 
-        this.projects[19] = projectSeven
+        this.projects[21] = projectSeven
 
 
                 // **** Hannibals **** //
@@ -143,7 +143,7 @@ class ProjectFactory {
        
                 
 
-       // this.projects[20] = projectEight
+        this.projects[22] = projectEight
 
 
                 // **** Vegans **** //
@@ -196,7 +196,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[10] = projectEleven
+        this.projects[18] = projectEleven
 
 
                 // **** Carl Sagan **** //
@@ -210,7 +210,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[14] = projectTwelve
+        this.projects[19] = projectTwelve
 
 
                 // **** Sharon Van Etten **** //
@@ -227,7 +227,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[1] = projectThirteen
+        this.projects[17] = projectThirteen
 
 
                         // **** Widows **** //
@@ -241,7 +241,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[11] = projectFourteen
+        this.projects[23] = projectFourteen
 
 
                         // **** Arundhati Roy **** //
@@ -265,9 +265,9 @@ class ProjectFactory {
         var projectsixteen = new Project()
         projectsixteen.setCategory(ProjectFactory.illustrationCategory.name)
         // projectsixteen.setSubCategory("portraiture")
+        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A.gif"))
         projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-B_800x775px.jpg"))
-        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A.jpg"))
-        projectsixteen.addImage(new ProjectImage("Serena Williams", "portrait, 2019" , "./../src/img/PORTRAIT-CHALLENGE-2019/Portrait-Challenge-SERENAWILLIAMS-A_770x800px.jpg"))
+
 
        
                 
@@ -291,7 +291,7 @@ class ProjectFactory {
        
                 
 
-        this.projects[7] = projectseventeen
+        this.projects[13] = projectseventeen
 
 
 
@@ -305,7 +305,7 @@ class ProjectFactory {
         projectEighteen.addImage(new ProjectImage("for Big Issue, May 2019", "The Heavens by Sandra Newman" , "./../src/img/BIG-ISSUE-HEAVENS/BigIssueHeavens-600x800.jpg"))
         projectEighteen.addImage(new ProjectImage("for Big Issue, May 2019", "The Heavens by Sandra Newman" , "./../src/img/BIG-ISSUE-HEAVENS/BigIssueHeavens-scan_543x800.jpg"))
 
-        this.projects[6] = projectEighteen
+        this.projects[24] = projectEighteen
 
 
 
@@ -333,7 +333,7 @@ class ProjectFactory {
         projectTwenty.addImage(new ProjectImage("Custom portrait", "Private Commission" , "./../src/img/PRIVATE-PORTRAITS/Amberley-Romo_Portrait_725x875px.jpg"))    
                 
 
-        this.projects[2] = projectTwenty
+        this.projects[5] = projectTwenty
 
 
                         // **** Oscars Olivia Coleman **** //
@@ -345,7 +345,7 @@ class ProjectFactory {
         projectTwentyone.addImage(new ProjectImage("Oscar Nominees 2019", "Olivia Coleman, The Favourite" , "./../src/img/OSCARS2019/OSCARS2019-BestActress-OliviaColeman_790x1000px.jpg"))
  
 
-        this.projects[3] = projectTwentyone
+        this.projects[1] = projectTwentyone
 
 
 
@@ -358,7 +358,7 @@ class ProjectFactory {
         projectTwentytwo.addImage(new ProjectImage("Oscar Nominees 2019", "Christian Bale, Vice" , "./../src/img/OSCARS2019/OSCARS2019-BestActor-ChristianBale_825x1000px.jpg"))        
  
 
-        this.projects[8] = projectTwentytwo
+        this.projects[6] = projectTwentytwo
 
 
 
@@ -375,7 +375,97 @@ class ProjectFactory {
         projectTwentythree.addImage(new ProjectImage("Portrait for GitPrime.Inc", "Nassim Kammah, Mailchimp" , "./../src/img/GITPRIME/GitPrime-NassimKammah_lowRes.jpg"))
         projectTwentythree.addImage(new ProjectImage("Portrait for GitPrime.Inc", "Dan Purpius, Range" , "./../src/img/GITPRIME/GitPrime-DanPurpius_LowRes.jpg"))
 
-        this.projects[5] = projectTwentythree
+        this.projects[9] = projectTwentythree
+
+
+
+
+                                      // **** Her Poster **** //
+
+        var projectTwentyfour = new Project()
+        projectTwentyfour.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+       
+        projectTwentyfour.addImage(new ProjectImage("Poster design", "" , "./../src/img/HER-POSTER/Her-poster_2020_810x1155px.jpg"))        
+        projectTwentyfour.addImage(new ProjectImage("Poster design", "" , "./../src/img/HER-POSTER/Her-figure_2020_800x1100.jpg"))
+        this.projects[2] = projectTwentyfour
+
+
+
+
+                                      // **** Keeper Oct 19 **** //
+
+        var projectTwentyfive = new Project()
+        projectTwentyfive.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+       
+        projectTwentyfive.addImage(new ProjectImage("Portrait", "The Keeper magazine Winter 2019" , "./../src/img/KEEPER-OCT19/KeeperOct19-CROP_950x1020.jpg"))        
+        projectTwentyfive.addImage(new ProjectImage("Portrait", "The Keeper magazine Winter 2019" , "./../src/img/KEEPER-OCT19/KeeperOct19-MainImage_LowRes.jpg"))        
+        projectTwentyfive.addImage(new ProjectImage("Drop-in illustration ", "The Keeper magazine Winter 2019" , "./../src/img/KEEPER-OCT19/KeeperOct19-DropIn_LowRes.jpg"))
+        this.projects[14] = projectTwentyfive
+
+
+
+
+                                      // **** Pets **** //
+
+        var projectTwentysix = new Project()
+        projectTwentysix.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+       
+        projectTwentysix.addImage(new ProjectImage("Pet portrait", "2019" , "./../src/img/PETS/Hector-WhiteTie_877x1116px.jpg"))        
+        projectTwentysix.addImage(new ProjectImage("Pet portrait", "2019" , "./../src/img/PETS/Lyra_740x990.jpg"))
+        projectTwentysix.addImage(new ProjectImage("Pet portrait", "2019" , "./../src/img/PETS/NelsonTux_880x1013.jpg"))
+        this.projects[7] = projectTwentysix
+
+
+
+
+                                      // **** PANTHER **** //
+
+        var projectTwentyseven = new Project()
+        projectTwentyseven.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+       
+        projectTwentyseven.addImage(new ProjectImage("", "2019" , "./../src/img/ANIMALS/PANTHER_877x1240.jpg"))        
+        this.projects[10] = projectTwentyseven
+
+
+
+
+                                      // **** RACCOONS **** //
+
+        var projectTwentyeight = new Project()
+        projectTwentyeight.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectNine.setSubCategory("portraiture")
+       
+        projectTwentyeight.addImage(new ProjectImage("", "2019" , "./../src/img/ANIMALS/RACOONS_830x1040.jpg"))        
+        projectTwentyeight.addImage(new ProjectImage("", "2019" , "./../src/img/ANIMALS/RACOONSx4_1075x777.jpg"))        
+        this.projects[11] = projectTwentyeight
+
+
+
+                         // Harris//
+
+        var projectTwentynine = new Project()
+        projectTwentynine.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectFifteen.setSubCategory("portraiture")
+        projectTwentynine.addImage(new ProjectImage("Custom portrait", "Private Commission" , "./../src/img/PRIVATE-PORTRAITS/Harris_587x925.jpg"))    
+                
+
+        this.projects[8] = projectTwentynine
+
+
+
+                         // Stormzy//
+
+        var projectThirty = new Project()
+        projectThirty.setCategory(ProjectFactory.illustrationCategory.name)
+        // projectFifteen.setSubCategory("portraiture")
+        projectThirty.addImage(new ProjectImage("Stormzy", "2019" , "./../src/img/STORMZY/Stormzy_700x990.jpg"))    
+                
+
+        this.projects[3] = projectThirty
 
     }
 
